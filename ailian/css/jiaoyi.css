@@ -48,7 +48,7 @@ thead,thead tr{height:40px}
 .main_content { width: 78%; min-width:918px;background: #fff; margin-bottom: -18px; padding:0 30px; float:left;border-top: 1px solid #ddd;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box; position: relative}
 #tradelist { width: 100%;padding: 0 30px; border-bottom:0 }
 #tradelist table{ width: 100%}
-#tradelist table tr td:first-child{ text-align: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+#tradelist table tr td:first-child{ text-align: left; text-indent: -5%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 #tradelist table tr th:first-child{ text-align: left; text-indent: 8px;background-position: 36px center}
 .tr-focus{ background: red !important; color: red}
 .rev_body .main_content { width: 100%; background: #D3F2F9 }
@@ -438,7 +438,7 @@ button[disabled],button[disabled]:hover,.sub-btn[disabled],.sub-btn[disabled]:ho
     #tradelist{ padding: 0 15px}
     .leftbar .icon-16{ margin-left: 4px}
     .volume.right-align{ padding-right: 0}
-    .bizhong_en{ padding: 0 3px}
+    .bizhong_en{ padding: 0 0px}
     div .high-low{ font-size: 12px}
     #top_last_rate_change dl:nth-child(2),#currVol{display: none}
     #top_last_rate_change dl:first-child{ border: none}
@@ -526,10 +526,17 @@ div .tip-con .sub-btn{ width: 100%;display: inline-block;text-align: center;-web
 }
 .jy_left{
 	float: left;
-	width: 50%;
+	width: 68%;
 }
 .jy_right{
 	float: left;
-	width: 49%;
+	width: 31%;
 	margin-left: 1%;
+}
+td,th{
+	text-align: center;
+}
+.duiqi{
+	width: 23%;
+	/*text-indent: 6%;*/
 }

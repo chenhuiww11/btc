@@ -270,7 +270,7 @@
 .jy_middle_two_main_con_tl img{display: inline-block;vertical-align: -3px;margin-right: 5px;}
 .jy_middle_two_gp{padding: 0px 5px;position: relative;margin-bottom: 5px;}
 .jy_middle_two_gp_name{width: 38%;line-height: 18px;}
-.jy_middle_two_gp input{padding: 0px 3%;width: 52%;border: 1px solid #e0dfdf;height: 26px;line-height: 16px;}
+.jy_middle_two_gp input{padding: 0px 3%;width: 59%;border: 1px solid #e0dfdf;height: 26px;line-height: 16px;}
 .danwei{position: absolute;line-height: 18px;color: #848484;right: 25px;top: 5px;}
 .baifenbi{color: #848484;}
 .jy_middle_jd{width: 58%;}
@@ -294,16 +294,16 @@
 .jy_rt_one_tl{border-bottom: 1px solid #dddcdc;padding: 0px 10px;}
 .lishi{
 	box-sizing: border-box;
-	padding: 0 10px;
+	padding: 0 1%;
 }
-.lishi_main{float: left;width: 20%;text-align: center;}
+.lishi_main{float: left;width: 26%;text-align: center;}
 .lishi_tl{background: #eeeeee;color: #7a7b7b;}
-.lishi_price{width: 22%;text-align: center;}
-.lishi_time{width: 18%;text-align: center;}
+.lishi_price{width: 30%;text-align: center;}
+.lishi_time{width: 20%;text-align: center;}
 .lishi_main a{color: #38a3f5;text-decoration: underline;}
 .lishi_b .lishi:nth-child(2n){background: #f8f7f7;}
-.lishi_b{border-bottom: 1px solid #dddcdc;max-height: 450px;overflow-y: auto;}
-.jybiaoti .lishi_main{width: 17%;}
+.lishi_b{border-bottom: 1px solid #dddcdc;max-height: 508px;overflow-y: auto;}
+.jybiaoti .lishi_main{width: 26%;}
 .jybiaoti .lishi_price{width: 28%;}
 .jybiaoti .lishi_time{width: 20%;}
 .jy_rt_two{background: #ffffff;border: 1px solid #dddcdc;border-radius: 3px;line-height: 30px;}
@@ -318,7 +318,7 @@
 .zx_table tr:last-child td{border-bottom: none;}
 .zx_table tr:hover td{background: rgba(255,255,255,0.2);}
 .jybiaoti1{
-    height: 302px;
+    height: 508px;
 }
 .jy_middle_two_gp .allprice {
     padding: 0px 3%;
@@ -331,4 +331,8 @@
     float: left;
     width: 15%;
     text-align: center;
+}
+/*隐藏滚轮*/
+::-webkit-scrollbar {/*隐藏滚轮*/
+display: none;
 }
