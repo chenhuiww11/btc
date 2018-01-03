@@ -538,5 +538,11 @@ td,th{
 }
 .duiqi{
 	width: 23%;
+	overflow-x: scroll;
+	box-sizing: border-box;
+	padding: 0 4%;
 	/*text-indent: 6%;*/
 }
+/*.lishi_price::-webkit-scrollbar {
+display: block;
+}*/

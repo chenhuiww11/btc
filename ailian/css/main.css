@@ -298,7 +298,7 @@
 }
 .lishi_main{float: left;width: 26%;text-align: center;}
 .lishi_tl{background: #eeeeee;color: #7a7b7b;}
-.lishi_price{width: 30%;text-align: center;}
+.lishi_price{width: 30%;text-align: center;overflow-x: scroll;box-sizing: border-box;padding: 0 4%;}
 .lishi_time{width: 20%;text-align: center;}
 .lishi_main a{color: #38a3f5;text-decoration: underline;}
 .lishi_b .lishi:nth-child(2n){background: #f8f7f7;}
