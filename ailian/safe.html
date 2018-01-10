@@ -20,6 +20,9 @@
 		.juli{
 			margin-left:1%;
 		}
+		a:hover{
+			color: #38a3f5;
+		}
 		.security_user{background-color: #f4f6f6;height: 170px;margin-bottom: 20px;font-size: 12px;}
 		.security_photo{padding: 30px 20px 30px 60px;}
 		.security_photo img{width: 111px;}
@@ -238,11 +241,12 @@
 									<span style="margin: 0 10px;">58.211.111.35 </span>
 								</p>
 							</div>
+							<a href="/btb/btc/ailian/safe.html">
 							<div class="left security_information">
 								<p style="line-height: 24px;margin-left: 60px;border-bottom: 1px solid #d0d1d8;padding-top: 8px;">您已设置2个保护项，还有4个保护项可设置</p>
 								<p class="grey" style="margin-left: 60px;line-height: 24px;">本平台实时保护您的账户和资金安全</p>
 							</div>
-
+							</a>
 						</div>
 						<div class="security_content layui-clear">
 							<div class="left security_part ">
@@ -252,11 +256,12 @@
 										<a href="/account_safety/pwdmodify">修改&gt;&gt;</a>
 									</p>
 								</div>
+								<a href="/btb/btc/ailian/safe.html">
 								<div class="security_part_content layui-clear">
 									<img src="images/icon_safe_login.png" class="left">
 									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;padding-top: 22px;line-height: 20px;">恭喜您！您已设置登录密码</span>
-
 								</div>
+								</a>
 							</div>
 							<div class="left security_part juli">
 								<div class="security_part_tittle layui-clear">
@@ -265,11 +270,12 @@
 										<a href="javascript:void(0);" id="validmail">激活邮箱</a>
 									</p>
 								</div>
+								<a href="/btb/btc/ailian/safe.html">
 								<div class="security_part_content layui-clear">
 									<img src="images/icon_safe_email_un.png" class="left">
 									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;padding-top: 22px;line-height: 20px;">每次提币等操作时需邮件确认</span>
-
 								</div>
+								</a>
 							</div>
 							<div class="left security_part ">
 								<div class="security_part_tittle layui-clear">
@@ -278,16 +284,16 @@
 										<a href="/account_safety/profile">认证&gt;&gt;</a>
 									</p>
 								</div>
+								<a href="/btb/btc/ailian/safe.html">
 								<div class="security_part_content layui-clear">
 									<img src="images/icon_safe_user_un.png" class="left">
 									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;padding-top: 22px;line-height: 20px;">
                 未验证身份信息，为确保您的账户安全，请尽快验证                </span>
 
 								</div>
+								</a>
 							</div>
-						</div>
-
-						<div class="security_content" style="margin-top: 20px;">
+							
 							<div class="left security_part juli">
 								<div class="security_part_tittle layui-clear">
 									<h3 class="left">两步验证<span class="m_jianju">|</span><span class="two_yz">谷歌验证</span></h3>
@@ -296,24 +302,13 @@
 									</p>
 
 								</div>
+								<a href="/btb/btc/ailian/safe.html">
 								<div class="security_part_content layui-clear">
 									<img src="images/icon_safe_google_un.png" class="left">
 									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;line-height: 20px;padding-top: 10px;">提现、修改密码及安全设置时需要输入谷歌验证码。</span>
 
 								</div>
-							</div>
-							<div class="left security_part">
-								<div class="security_part_tittle layui-clear">
-									<h3 class="left">两步验证<span class="m_jianju">|</span><span class="two_yz">手机号码</span></h3>
-									<p class="right">
-										<a href="/account_safety/phone">绑定&gt;&gt;</a>
-									</p>
-								</div>
-								<div class="security_part_content layui-clear">
-									<img src="images/icon_safe_phone_un.png" class="left">
-									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;line-height: 20px;padding-top: 10px;">提现、修改密码及安全设置时需要输入短信验证码。</span>
-
-								</div>
+								</a>
 							</div>
 							<div class="left security_part juli">
 								<div class="security_part_tittle layui-clear">
@@ -324,39 +319,22 @@
 									</p>
 
 								</div>
-								<a href="/account_safety/switch">
+								<a href="/btb/btc/ailian/safe.html">
 									<div class="security_part_content layui-clear">
 										<img src="images/icon_safe_switch.png" class="left">
 										<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;ine-height: 20px;padding-top: 10px;">登录安全验证提供更为安全的用户登录防护</span>
 									</div>
 								</a>
 							</div>
-							<div class="clearfix"></div>
+							
+							
+							
+							
+							
+							
+							
+							
 						</div>
-						<script>
-							$('#validmail').unbind('click').on('click', function() {
-								$.ajax({
-									url: '/account/reSendmail/email/617572901@qq.com',
-									dataType: 'json',
-									success: function(res) {
-										layer.alert('激活邮件已发送成功,请到您的邮箱中根据提示激活', {
-											icon: 1
-										});
-									}
-								});
-							});
-
-							//Demo
-							layui.use('form', function() {
-								var form = layui.form;
-
-								//监听提交
-								form.on('submit(formDemo)', function(data) {
-									layer.msg(JSON.stringify(data.field));
-									return false;
-								});
-							});
-						</script>
 					</div>
 
 				</div>
