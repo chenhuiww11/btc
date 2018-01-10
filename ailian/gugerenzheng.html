@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/init.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+	</head>
+	<style>
+		.renzheng .warn {
+			font-size: 14px;
+			padding-top: 20px
+		}
+		
+		.renzheng .warn img {
+			border-radius: 50%;
+			position: relative;
+			top: 2px;
+			margin-right: 10px
+		}
+		
+		.active img {
+			border-radius: 50%;
+			position: relative;
+			top: 2px;
+			margin-right: 10px;
+			float: left
+		}
+		
+		.renzheng .warn_trade {
+			position: relative;
+			padding-left: 25px
+		}
+		
+		.renzheng .warn_trade img {
+			position: absolute;
+			left: 0;
+			top: 22px
+		}
+		
+		.renzheng .warn span {
+			color: #f15e5e;
+			font-size: 14px
+		}
+		
+		.renzheng .warn font {
+			padding-top: 8px;
+			display: block
+		}
+		
+		.renzheng .warn {
+			border-bottom: solid 1px #dcdde4;
+			padding-bottom: 15px
+		}
+		
+		.renzheng .list {
+			font-size: 14px;
+			line-height: 55px
+		}
+		
+		.renzheng .list span {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background: #2f3d46;
+			text-align: center;
+			color: #fff;
+			margin-right: 12px;
+			line-height: 16px;
+			position: relative;
+			top: -2px
+		}
+		
+		.renzheng .list_p1 {
+			font-size: 14px;
+			line-height: 50px;
+			background: #f7f7f7;
+			color: #aaa;
+			padding: 0 20px;
+			position: relative
+		}
+		
+		.renzheng .list_p1 span {
+			line-height: 24px;
+			display: block;
+			position: absolute;
+			right: 12px;
+			top: 12px;
+			text-align: center;
+			color: #2174ff;
+			font-size: 14px;
+			border: solid 1px #2174ff;
+			border-radius: 3px;
+			cursor: pointer;
+			padding: 0 15px
+		}
+		
+		.renzheng .list_p1 span:hover {
+			background: #2174ff;
+			color: #FFF
+		}
+		
+		.renzheng .list_dl1 {
+			padding-left: 25px
+		}
+		
+		.renzheng .list_dl1 dd {
+			font-size: 14px;
+			color: #aaa
+		}
+		
+		.renzheng .list_dl1 dd span {
+			font-size: 18px;
+			color: #f15e5e;
+			padding: 0 15px
+		}
+		
+		.renzheng .list_dl1 dt img {
+			margin: 15px 0;
+			margin-top: 20px
+		}
+		
+		.renzheng .list_dl2 {
+			padding-top: 20px;
+			overflow: hidden;
+			padding-left: 25px
+		}
+		
+		.renzheng .list_dl2 dd input {
+			width: 238px;
+			height: 38px;
+			border: solid 1px #d2d2d2;
+			float: left;
+			border-radius: 3px;
+			padding: 0 12px;
+			font-size: 14px
+		}
+		
+		.renzheng .list_dl2 dt {
+			height: 38px;
+			border: solid 1px #d2d2d2;
+			float: left;
+			line-height: 37px;
+			margin: 9px 0 0 30px;
+			color: #f15e5e;
+			padding: 0 12px;
+			position: relative;
+			font-size: 14px
+		}
+		
+		.renzheng .list_dl2 dt:before {
+			content: '';
+			position: absolute;
+			border-right: solid 1px #d2d2d2;
+			border-top: solid 1px #d2d2d2;
+			-webkit-transform: rotate(-135deg);
+			-moz-transform: rotate(-135deg);
+			width: 10px;
+			height: 10px;
+			left: -6px;
+			top: 12px;
+			background: #fff
+		}
+		
+		.renzheng .list_dl1 dd input {
+			position: relative;
+			top: 2px;
+			margin-right: 5px;
+			margin-left: 15px
+		}
+		
+		.renzheng .btn {
+			width: 240px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			color: #fff;
+			font-size: 14px;
+			border-radius: 3px;
+			background: #2174ff;
+			cursor: pointer;
+			margin-top: 20px;
+			margin-left: 25px
+		}
+	</style>
+
+	<body style="background: #f9f9f9;">
+		<div class="head clearfix">
+			<div class="left head_lf">
+				BTC: ¥<span class="num_down">7,861</span>&nbsp;|&nbsp;ETH: ¥<span class="num_down">308.1</span>&nbsp;|&nbsp;ETC: ¥<span class="num_up">14.1</span>
+			</div>
+			<div class="right language clearfix">
+				<span class="language_t right clearfix">
+					<img src="images/language_03.png" class="left" />
+					<em class="left"></em>
+				</span>
+				<div class="language_yin">
+					<p>
+						<a href="#">
+							<img src="images/language_03.png" />
+							<span>China</span>
+						</a>
+					</p>
+					<p>
+						<a href="#">
+							<img src="images/languages3_07.png" />
+							<span>English</span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="jz clearfix">
+				<a href="index.html" class="left logo"></a>
+				<div class="right menu_rt clearfix">
+					<div class="left menu_main">
+						<a href="index.html" class="ahover">首页</a>
+						<a href="jiaoyi.html">交易中心</a>
+						<a href="zhongchou.html">众筹中心 </a>
+						<a href="caiwu.html">财务中心</a>
+					</div>
+					<div class="left zhuce head_per clearfix">
+						<span class="left">|</span>
+						<a href="#" class="email left"><em>88</em></a>
+						<div class="left tx clearfix">
+							<img src="images/caiwu_03.png" class="left" />
+							<span class="left">adfdf</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main caiwu_main clearfix">
+			<div class="left caiwu_lf">
+				<div class="caiwu_lf_tl">
+					我的资产
+				</div>
+				<ul>
+					<li>
+						<a href="caiwu.html">
+							<img src="images/caiwu_1.png" class="img_q" />
+							<img src="images/caiwu_11.png" class="img_h" />
+							<span>净资产</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_15.png" class="img_q" />
+							<img src="images/caiwu_155.png" class="img_h" />
+							<span>奖品</span>
+						</a>
+					</li>
+					<li>
+						<a href="chongzhi.html" class="ahover">
+							<img src="images/caiwu_14.png" class="img_q" />
+							<img src="images/caiwu_144.png" class="img_h" />
+							<span>充值人民币</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_14.png" class="img_q" />
+							<img src="images/caiwu_144.png" class="img_h" />
+							<span>提现人民币</span>
+						</a>
+					</li>
+				</ul>
+				<div class="caiwu_lf_tl">
+					我的交易
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_22.png" class="img_q" />
+							<img src="images/caiwu_222.png" class="img_h" />
+							<span>我的委单</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_23.png" class="img_q" />
+							<img src="images/caiwu_233.png" class="img_h" />
+							<span>成交记录</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_22.png" class="img_q" />
+							<img src="images/caiwu_222.png" class="img_h" />
+							<span>我的委单（全网）</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_23.png" class="img_q" />
+							<img src="images/caiwu_233.png" class="img_h" />
+							<span>成交记录（全网）</span>
+						</a>
+					</li>
+				</ul>
+				<div class="caiwu_lf_tl">
+					项目管理
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_22.png" class="img_q" />
+							<img src="images/caiwu_222.png" class="img_h" />
+							<span>已参与项目</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_25.png" class="img_q" />
+							<img src="images/caiwu_255.png" class="img_h" />
+							<span>项目分红</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_22.png" class="img_q" />
+							<img src="images/caiwu_222.png" class="img_h" />
+							<span>已创建项目</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_28.png" class="img_q" />
+							<img src="images/caiwu_288.png" class="img_h" />
+							<span>项目分红管理</span>
+						</a>
+					</li>
+				</ul>
+				<div class="caiwu_lf_tl">
+					账户中心
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_35.png" class="img_q" />
+							<img src="images/caiwu_355.png" class="img_h" />
+							<span>账户信息</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_34.png" class="img_q" />
+							<img src="images/caiwu_344.png" class="img_h" />
+							<span>推荐人</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_41.png" class="img_q" />
+							<img src="images/caiwu_411.png" class="img_h" />
+							<span>安全设置</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_39.png" class="img_q" />
+							<img src="images/caiwu_399.png" class="img_h" />
+							<span>邮箱设置</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_42.png" class="img_q" />
+							<img src="images/caiwu_422.png" class="img_h" />
+							<span>第三方登录</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right caiwu_rt renzheng">
+				<div class="caiwu_rt_main">
+					<div class="caiwu_rt_tl">
+						谷歌认证
+					</div>
+					<p class="warn warn_trade"><img src="images/warn.png">
+						<span style="font-size: 14px;">您的账户还未开启谷歌认证</span><br>
+						<font>谷歌双重认证能够保证用户安全，不开启不会影响正常的交易</font>
+						<font>开户双重验证功能后，系统都会提示您输入手机应用程序上显示的一次性密码，来确保您的资金安全。</font>
+						<font> 您可以依照下面的步骤来设置并启用这一功能。</font>
+					</p>
+					<p class="list"><span>1</span>第一步</p>
+					<p class="list_p1">请先用手机app“身份验证器”扫描二维码....等描述自己写
+						<a target="_blank" href="http://itunes.apple.com/cn/app/google-authenticator/id388497605?mt=8"><span>点击下载</span></a>
+					</p>
+					<p class="list"><span>2</span>安装完成后，您需要对该应用程序进行如下配置</p>
+					<dl class="list_dl1">
+						<dd>扫描如下二维码</dd>
+						<dt id="qrcode"><img src="data:image/png;base64,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"></dt>
+						<dd>输入16位密匙:
+							<span>TJM5SR44KXSXV44E</span></dd>
+					</dl>
+					<dl class="list_dl2">
+						<input type="hidden" name="secret" value="TJM5SR44KXSXV44E">
+						<dd><input type="text" name="ga" placeholder="邮箱验证密码:" style="margin-top: 9px;"></dd>
+						<dt>获取邮箱验证码</dt>
+					</dl>
+					<dl class="list_dl2">
+						<input type="hidden" name="secret" value="TJM5SR44KXSXV44E">
+						<dd><input type="text" name="ga" placeholder="谷歌验证密码:" style="margin-top: 9px;"></dd>
+						<dt>请输入手机应用程序上显示的双重验证密码</dt>
+					</dl>
+					<p class="btn" onclick="gasave()">验证并启用</p>
+				</div>
+				</form>
+
+			</div>
+
+		</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer_t">
+				<div class="footer_t_main clearfix">
+					<a href="index.html" class="footer_logo left"></a>
+					<div class="left footer_menu clearfix">
+						<a href="#">关于我们 </a><span>&nbsp;|&nbsp;</span>
+						<a href="#">法律声明</a><span> &nbsp;|&nbsp;</span>
+						<a href="#">手续费率</a><span> &nbsp;|&nbsp;</span>
+						<a href="#">意见反馈</a>
+					</div>
+					<a href="#" class="right wb">关注我们</a>
+				</div>
+			</div>
+			<div class="footer_b">
+				<div class="jz clearfix">
+					<span>© 2017 河南省郑州市金多投资管理有限公司 </span>
+					<span>QQ群1：213365551 </span>
+					<span>豫ICP备100000000 </span>
+					<span class="beian">豫公网安备 00000000000000号</span>
+				</div>
+			</div>
+		</div>
+		<div class="bg"></div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>

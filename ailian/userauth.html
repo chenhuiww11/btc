@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/init.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+	</head>
+	<style>
+		
+.verified .img_box{padding: 30px 0px 30px 10px;}
+.verified .img_box .inner{width: 230px;border: solid 1px #dcdde4;margin-right: 24px; border-radius: 3px;float: left;}
+.verified .img_box .inner:last-child{margin-right: 0;}
+.verified .img_box .inner p.t{line-height: 50px; margin-bottom: 0px; color: #696777; text-indent: 0rem;font-size: 14px;text-align: center;}
+.verified .img_box .inner p.t span{font-size: 14px;color: #696777;}
+.verified .img_box .inner p.img img{width: 200px;height: 123px;border-radius: 8px;}
+.verified .img_box .inner a{width: 80px;line-height: 22px;display:block;text-align:center;font-size: 12px;border: solid 1px #2174ff;margin: 10px auto 20px; border-radius: 3px;color: #2174ff;}
+.verified .img_box .inner a span{color: #2174ff;}
+.verified .img_box .inner a:hover{background: #2174ff;color: #fff; text-decoration: none;}
+.verified .img_box .inner a:hover span{color: #fff;}
+table tr th{text-align:left;font-weight:400;font-size:16px;height:50px;border-bottom:solid 1px #dcdde4;background:#fafafa;text-indent:20px}
+table tr th i{display:inline-block;width:9px;height:6px;background:url(/static/images/sj.png) no-repeat;background-position:0 -6px;margin-left:10px;position:relative;top:-2px;cursor:pointer;-webkit-transition:background-image .2s ease-in-out;-moz-transition:background-image .2s ease-in-out;-ms-transition:background-image .2s ease-in-out;-o-transition:background-image .2s ease-in-out;transition:background-image .2s ease-in-out}
+table tr th:hover i{background-position:0 0}
+table tr th{text-align:left;font-weight:400;font-size:16px;height:50px;border-bottom:solid 1px #dcdde4;background:#fafafa;text-indent:20px;position:relative}
+table tr td{background: none !important;}
+table tr td,.body .right.chongzhi table tr td a{font-size:14px;height:50px;text-indent:20px}
+.lm_manage .note{line-height: 26px;font-size: 12px;}
+.submit {
+    background: #2174ff;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.img{
+	text-align: center;
+}
+.lm_manage .btn {
+    display: block;
+    margin-top: 40px;
+    margin-left: 316px;
+    margin-bottom: 40px;
+}
+	</style>
+	
+	
+	<body style="background: #f9f9f9;">
+		<div class="head clearfix">
+			<div class="left head_lf">
+				BTC: ¥<span class="num_down">7,861</span>&nbsp;|&nbsp;ETH: ¥<span class="num_down">308.1</span>&nbsp;|&nbsp;ETC: ¥<span class="num_up">14.1</span>
+			</div>
+			<div class="right language clearfix">
+				<span class="language_t right clearfix">
+					<img src="images/language_03.png" class="left" />
+					<em class="left"></em>
+				</span>
+				<div class="language_yin">
+					<p>
+						<a href="#">
+							<img src="images/language_03.png" />
+							<span>China</span>
+						</a>
+					</p>
+					<p>
+						<a href="#">
+							<img src="images/languages3_07.png" />
+							<span>English</span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	    <div class="menu">
+	    	<div class="jz clearfix">
+	    		<a href="index.html" class="left logo"></a>
+	    		<div class="right menu_rt clearfix">
+	    			<div class="left menu_main">
+	    				<a href="index.html" class="ahover">首页</a>
+	    				<a href="jiaoyi.html">交易中心</a>
+	    				<a href="zhongchou.html">众筹中心 </a>
+	    				<a href="caiwu.html">财务中心</a>
+	    			</div>
+	    			<div class="left zhuce head_per clearfix">
+	    				<span class="left">|</span>
+	    				<a href="#" class="email left"><em>88</em></a>
+	    				<div class="left tx clearfix">
+	    					<img src="images/caiwu_03.png" class="left" />
+	    					<span class="left">adfdf</span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="main caiwu_main clearfix">
+	    	<div class="left caiwu_lf">
+	    		<div class="caiwu_lf_tl">
+	    			我的资产
+	    		</div>
+	    		<ul>
+	    			<li>
+	    				<a href="caiwu.html">
+	    					<img src="images/caiwu_1.png" class="img_q" />
+	    					<img src="images/caiwu_11.png" class="img_h" />
+	    					<span>净资产</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_15.png" class="img_q" />
+	    					<img src="images/caiwu_155.png" class="img_h" />
+	    					<span>奖品</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="chongzhi.html" class="ahover">
+	    					<img src="images/caiwu_14.png" class="img_q" />
+	    					<img src="images/caiwu_144.png" class="img_h" />
+	    					<span>充值人民币</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_14.png" class="img_q" />
+	    					<img src="images/caiwu_144.png" class="img_h" />
+	    					<span>提现人民币</span>
+	    				</a>
+	    			</li>
+	    		</ul>
+	    	    <div class="caiwu_lf_tl">
+	    			我的交易
+	    		</div>
+	    		<ul>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_22.png" class="img_q" />
+	    					<img src="images/caiwu_222.png" class="img_h" />
+	    					<span>我的委单</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_23.png" class="img_q" />
+	    					<img src="images/caiwu_233.png" class="img_h" />
+	    					<span>成交记录</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_22.png" class="img_q" />
+	    					<img src="images/caiwu_222.png" class="img_h" />
+	    					<span>我的委单（全网）</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_23.png" class="img_q" />
+	    					<img src="images/caiwu_233.png" class="img_h" />
+	    					<span>成交记录（全网）</span>
+	    				</a>
+	    			</li>
+	    		</ul>
+	    	    <div class="caiwu_lf_tl">
+	    			项目管理
+	    		</div>
+	    		<ul>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_22.png" class="img_q" />
+	    					<img src="images/caiwu_222.png" class="img_h" />
+	    					<span>已参与项目</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_25.png" class="img_q" />
+	    					<img src="images/caiwu_255.png" class="img_h" />
+	    					<span>项目分红</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_22.png" class="img_q" />
+	    					<img src="images/caiwu_222.png" class="img_h" />
+	    					<span>已创建项目</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_28.png" class="img_q" />
+	    					<img src="images/caiwu_288.png" class="img_h" />
+	    					<span>项目分红管理</span>
+	    				</a>
+	    			</li>
+	    		</ul>
+	    	    <div class="caiwu_lf_tl">
+	    			账户中心
+	    		</div>
+	    		<ul>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_35.png" class="img_q" />
+	    					<img src="images/caiwu_355.png" class="img_h" />
+	    					<span>账户信息</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_34.png" class="img_q" />
+	    					<img src="images/caiwu_344.png" class="img_h" />
+	    					<span>推荐人</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_41.png" class="img_q" />
+	    					<img src="images/caiwu_411.png" class="img_h" />
+	    					<span>安全设置</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_39.png" class="img_q" />
+	    					<img src="images/caiwu_399.png" class="img_h" />
+	    					<span>邮箱设置</span>
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a href="#">
+	    					<img src="images/caiwu_42.png" class="img_q" />
+	    					<img src="images/caiwu_422.png" class="img_h" />
+	    					<span>第三方登录</span>
+	    				</a>
+	    			</li>
+	    		</ul>
+	    	</div>
+	        <div class="right caiwu_rt">
+	        	<div class="caiwu_rt_main">
+	        		<div class="caiwu_rt_tl">
+	        			实名认证
+	        		</div>
+	        		
+	        		
+	        		
+	        		<form action="" method="post" enctype="multipart/form-data" id="upload_idimg">
+			<div class="pay_manage lm_manage" id="step_2">
+				<div class="auth_box" style="margin-top: 30px;">
+					<table width="700" border="0" cellpadding="0" cellspacing="0">
+						<tbody>
+						<tr>
+							<td style="text-indent: 7px!important;width: 80px;">您的国籍：</td>
+							<td width="556">
+								<select id="country" name="intl" class="select">
+																			<option value="86">中国(China)</option>
+																			<option value="853">中国澳门(Macao)</option>
+																			<option value="886">中国台湾(Taiwan,Province of China)</option>
+																			<option value="852">中国香港(Hong Kong)</option>
+																			<option value="61">澳洲(Australia)</option>
+																			<option value="49">德国(Germany)</option>
+																			<option value="7">俄罗斯(Russian Federation)</option>
+																			<option value="33">法国(France)</option>
+																			<option value="63">菲律宾(Philippines)</option>
+																			<option value="82">韩国(Korea)</option>
+																			<option value="1">加拿大(Canada)</option>
+																			<option value="52">墨西哥(Mexico)</option>
+																			<option value="81">日本(Japan)</option>
+																			<option value="66">泰国(Thailand)</option>
+																			<option value="65">新加坡(Singapore)</option>
+																			<option value="91">印度(India)</option>
+																			<option value="44">英国(United Kingdom)</option>
+																	</select>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-indent: 7px!important;">真实姓名：</td>
+							<td>
+								<input type="text" name="name" class="input">
+								<span>请填写您的真实姓名</span>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-indent: 7px!important;">证件类型：</td>
+							<td width="556" style="position: relative;">
+								<select name="idtype" class="select" id="vtype">
+																			<option value="1">身份证</option>
+																			<option value="3">护照</option>
+																			<option value="6">驾驶证</option>
+																	</select>
+							</td>
+						</tr>
+						<tr>
+							<td style="text-indent: 7px!important;">证件号码：</td>
+							<td>
+								<input type="text" id="idcard" name="idcard" class="input">
+								<span id="idcard_text">请填写您的证件号码</span>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+								<div class="verified">
+					<div class="img_box">
+						<div class="center inner">
+							<p class="t"><span class="gh">上传</span>证件正面照</p>
+							<p class="img"><img src="images/sfz_z.png?v=2.1"></p>
+							<a class="radius upload_original"><span class="cx">点击</span>上传</a>
+							<input type="file" class="file" name="photo[]" style="display: none;">
+						</div>
+						<div class="center inner">
+							<p class="t"><span class="gh">上传</span>证件反面照</p>
+							<p class="img"><img src="images/sfz_f.png?v=2.1"></p>
+							<a class="radius upload_original"><span class="cx">点击</span>上传</a>
+							<input type="file" class="file" name="photo[]" style="display: none;">
+						</div>
+						<div class="center inner">
+							<p class="t"><span class="gh">上传</span>手持证件照</p>
+							<p class="img"><img src="images/sfz_sc.png?v=2.1"></p>
+							<a class="radius upload_original"><span class="cx">点击</span>上传</a>
+							<input type="file" class="file" name="photo[]" style="display: none;">
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<p class="note red">手持证件照片要求: 一手手持证件照片，另一手手持写有当天日期纸条的照片</p>
+				<p class="note" style="color: #999;">证件必须是清晰彩色原件电子版，证件上文字清晰可见，可以是扫描件或者数码拍摄照片<br>请上传后缀名为jpg jpeg
+					png的照片，每张照片最大不能超过2M</p>
+				<p class="note" style="color: #999;">18时前提交的认证申请会在当日完成审核，18时后提交的申请在24小时内完成审核，节假日会审核会有延迟，请您耐心等待审核结果</p>
+				<input type="button" value="确认提交" onclick="upload_idimg()" class="submit btn">
+			</div>
+		</form>
+	        		
+	        	</div>
+	        	
+	        </div>
+	    </div>
+	   
+	    <div class="footer">
+	    	<div class="footer_t">
+	    		<div class="footer_t_main clearfix">
+	    			<a href="index.html" class="footer_logo left"></a>
+	    			<div class="left footer_menu clearfix">
+	    				<a href="#">关于我们 </a><span>&nbsp;|&nbsp;</span>
+	    				<a href="#">法律声明</a><span> &nbsp;|&nbsp;</span>
+	    				<a href="#">手续费率</a><span> &nbsp;|&nbsp;</span>
+	    				<a href="#">意见反馈</a>
+	    			</div>
+	    			<a href="#" class="right wb">关注我们</a>
+	    		</div>
+	    	</div>
+	    	<div class="footer_b">
+	    		<div class="jz clearfix">
+	    			<span>© 2017 河南省郑州市金多投资管理有限公司 </span>
+	    			<span>QQ群1：213365551 </span>
+	    			<span>豫ICP备100000000 </span>
+	    			<span class="beian">豫公网安备 00000000000000号</span>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="bg"></div>
+	    <script type="text/javascript" src="js/main.js" ></script>
+	</body>
+</html>

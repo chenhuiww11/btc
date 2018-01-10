@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/init.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+	</head>
+	<style>
+       .main_content {
+		    background-color: #fff;
+		    padding: 20px;
+		    min-height: 600px;
+		}
+		.over{
+			overflow: hidden;
+		}
+		.juli{
+			margin-left:1%;
+		}
+		.security_user{background-color: #f4f6f6;height: 170px;margin-bottom: 20px;font-size: 12px;}
+		.security_photo{padding: 30px 20px 30px 60px;}
+		.security_photo img{width: 111px;}
+		.security_information{padding-top: 50px;}
+		.security_user_h3{font-size: 18px;line-height: 40px;}
+		.security_part{width:48%;height:200px;border-radius: 4px;box-shadow:0px 2px 5px #eae7e7;
+		-moz-box-shadow:0px 2px 5px #eae7e7;-webkit-box-shadow:0px 2px 5px #eae7e7;margin-top: 20px;}
+		.security_part img{width: 80px;}
+		.security_part_tittle{font-size:12px;padding: 0px 20px;height: 50px;background-color: #f7f7f8;line-height: 50px;border-top-left-radius: 4px;border-top-right-radius: 4px;}
+		.security_part_tittle a{color: #3c89d7;cursor: pointer;font-size: 12px; }
+		.security_part_tittle a:hover{color: #02C2D0;text-decoration: underline;}
+		.security_part_content{padding: 30px 20px; font-size: 12px;}
+       </style>
+
+	<body style="background: #f9f9f9;">
+		<div class="head clearfix">
+			<div class="left head_lf">
+				BTC: ¥<span class="num_down">7,861</span>&nbsp;|&nbsp;ETH: ¥<span class="num_down">308.1</span>&nbsp;|&nbsp;ETC: ¥<span class="num_up">14.1</span>
+			</div>
+			<div class="right language clearfix">
+				<span class="language_t right clearfix">
+					<img src="images/language_03.png" class="left" />
+					<em class="left"></em>
+				</span>
+				<div class="language_yin">
+					<p>
+						<a href="#">
+							<img src="images/language_03.png" />
+							<span>China</span>
+						</a>
+					</p>
+					<p>
+						<a href="#">
+							<img src="images/languages3_07.png" />
+							<span>English</span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="jz clearfix">
+				<a href="index.html" class="left logo"></a>
+				<div class="right menu_rt clearfix">
+					<div class="left menu_main">
+						<a href="index.html" class="ahover">首页</a>
+						<a href="jiaoyi.html">交易中心</a>
+						<a href="zhongchou.html">众筹中心 </a>
+						<a href="caiwu.html">财务中心</a>
+					</div>
+					<div class="left zhuce head_per clearfix">
+						<span class="left">|</span>
+						<a href="#" class="email left"><em>88</em></a>
+						<div class="left tx clearfix">
+							<img src="images/caiwu_03.png" class="left" />
+							<span class="left">adfdf</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main caiwu_main clearfix">
+			<div class="left caiwu_lf">
+				<div class="caiwu_lf_tl">
+					我的资产
+				</div>
+				<ul>
+					<li>
+						<a href="caiwu.html">
+							<img src="images/caiwu_1.png" class="img_q" />
+							<img src="images/caiwu_11.png" class="img_h" />
+							<span>净资产</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_15.png" class="img_q" />
+							<img src="images/caiwu_155.png" class="img_h" />
+							<span>奖品</span>
+						</a>
+					</li>
+					<li>
+						<a href="chongzhi.html" class="ahover">
+							<img src="images/caiwu_14.png" class="img_q" />
+							<img src="images/caiwu_144.png" class="img_h" />
+							<span>充值人民币</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_14.png" class="img_q" />
+							<img src="images/caiwu_144.png" class="img_h" />
+							<span>提现人民币</span>
+						</a>
+					</li>
+				</ul>
+				<div class="caiwu_lf_tl">
+					我的交易
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_22.png" class="img_q" />
+							<img src="images/caiwu_222.png" class="img_h" />
+							<span>我的委单</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_23.png" class="img_q" />
+							<img src="images/caiwu_233.png" class="img_h" />
+							<span>成交记录</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_22.png" class="img_q" />
+							<img src="images/caiwu_222.png" class="img_h" />
+							<span>我的委单（全网）</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_23.png" class="img_q" />
+							<img src="images/caiwu_233.png" class="img_h" />
+							<span>成交记录（全网）</span>
+						</a>
+					</li>
+				</ul>
+				<div class="caiwu_lf_tl">
+					项目管理
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_22.png" class="img_q" />
+							<img src="images/caiwu_222.png" class="img_h" />
+							<span>已参与项目</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_25.png" class="img_q" />
+							<img src="images/caiwu_255.png" class="img_h" />
+							<span>项目分红</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_22.png" class="img_q" />
+							<img src="images/caiwu_222.png" class="img_h" />
+							<span>已创建项目</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_28.png" class="img_q" />
+							<img src="images/caiwu_288.png" class="img_h" />
+							<span>项目分红管理</span>
+						</a>
+					</li>
+				</ul>
+				<div class="caiwu_lf_tl">
+					账户中心
+				</div>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_35.png" class="img_q" />
+							<img src="images/caiwu_355.png" class="img_h" />
+							<span>账户信息</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_34.png" class="img_q" />
+							<img src="images/caiwu_344.png" class="img_h" />
+							<span>推荐人</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_41.png" class="img_q" />
+							<img src="images/caiwu_411.png" class="img_h" />
+							<span>安全设置</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_39.png" class="img_q" />
+							<img src="images/caiwu_399.png" class="img_h" />
+							<span>邮箱设置</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/caiwu_42.png" class="img_q" />
+							<img src="images/caiwu_422.png" class="img_h" />
+							<span>第三方登录</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right caiwu_rt">
+				<div class="caiwu_rt_main over">
+					<div class="caiwu_rt_tl">
+						安全中心
+					</div>
+
+					<div class="main_content right">
+						<div class="security_user">
+							<div class="left security_photo"><img src="images/serity_03.png"></div>
+							<div class="left security_information">
+								<p class="security_user_h3 mid_black"><span>ID:16215</span><span style="margin: 0 10px;">  617572901@qq.com</span></p>
+								<p class="grey"><span>最近一次登录：2018-01-10 </span>
+									<span style="margin: 0 10px;">58.211.111.35 </span>
+								</p>
+							</div>
+							<div class="left security_information">
+								<p style="line-height: 24px;margin-left: 60px;border-bottom: 1px solid #d0d1d8;padding-top: 8px;">您已设置2个保护项，还有4个保护项可设置</p>
+								<p class="grey" style="margin-left: 60px;line-height: 24px;">本平台实时保护您的账户和资金安全</p>
+							</div>
+
+						</div>
+						<div class="security_content layui-clear">
+							<div class="left security_part ">
+								<div class="security_part_tittle">
+									<h3 class="left">登录密码</h3>
+									<p class="right">
+										<a href="/account_safety/pwdmodify">修改&gt;&gt;</a>
+									</p>
+								</div>
+								<div class="security_part_content layui-clear">
+									<img src="images/icon_safe_login.png" class="left">
+									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;padding-top: 22px;line-height: 20px;">恭喜您！您已设置登录密码</span>
+
+								</div>
+							</div>
+							<div class="left security_part juli">
+								<div class="security_part_tittle layui-clear">
+									<h3 class="left">邮箱激活</h3>
+									<p class="right">
+										<a href="javascript:void(0);" id="validmail">激活邮箱</a>
+									</p>
+								</div>
+								<div class="security_part_content layui-clear">
+									<img src="images/icon_safe_email_un.png" class="left">
+									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;padding-top: 22px;line-height: 20px;">每次提币等操作时需邮件确认</span>
+
+								</div>
+							</div>
+							<div class="left security_part ">
+								<div class="security_part_tittle layui-clear">
+									<h3 class="left">实名认证</h3>
+									<p class="right">
+										<a href="/account_safety/profile">认证&gt;&gt;</a>
+									</p>
+								</div>
+								<div class="security_part_content layui-clear">
+									<img src="images/icon_safe_user_un.png" class="left">
+									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;padding-top: 22px;line-height: 20px;">
+                未验证身份信息，为确保您的账户安全，请尽快验证                </span>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="security_content" style="margin-top: 20px;">
+							<div class="left security_part juli">
+								<div class="security_part_tittle layui-clear">
+									<h3 class="left">两步验证<span class="m_jianju">|</span><span class="two_yz">谷歌验证</span></h3>
+									<p class="right">
+										<a href="/account_safety/ga">绑定&gt;&gt;</a>
+									</p>
+
+								</div>
+								<div class="security_part_content layui-clear">
+									<img src="images/icon_safe_google_un.png" class="left">
+									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;line-height: 20px;padding-top: 10px;">提现、修改密码及安全设置时需要输入谷歌验证码。</span>
+
+								</div>
+							</div>
+							<div class="left security_part">
+								<div class="security_part_tittle layui-clear">
+									<h3 class="left">两步验证<span class="m_jianju">|</span><span class="two_yz">手机号码</span></h3>
+									<p class="right">
+										<a href="/account_safety/phone">绑定&gt;&gt;</a>
+									</p>
+								</div>
+								<div class="security_part_content layui-clear">
+									<img src="images/icon_safe_phone_un.png" class="left">
+									<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;line-height: 20px;padding-top: 10px;">提现、修改密码及安全设置时需要输入短信验证码。</span>
+
+								</div>
+							</div>
+							<div class="left security_part juli">
+								<div class="security_part_tittle layui-clear">
+
+									<h3 class="left">登录安全验证</h3>
+									<p class="right">
+										<a href="/account_safety/switch">查看&gt;&gt;</a>
+									</p>
+
+								</div>
+								<a href="/account_safety/switch">
+									<div class="security_part_content layui-clear">
+										<img src="images/icon_safe_switch.png" class="left">
+										<span class="left" style="display: inline-block;width: 150px;margin-left: 20px;ine-height: 20px;padding-top: 10px;">登录安全验证提供更为安全的用户登录防护</span>
+									</div>
+								</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<script>
+							$('#validmail').unbind('click').on('click', function() {
+								$.ajax({
+									url: '/account/reSendmail/email/617572901@qq.com',
+									dataType: 'json',
+									success: function(res) {
+										layer.alert('激活邮件已发送成功,请到您的邮箱中根据提示激活', {
+											icon: 1
+										});
+									}
+								});
+							});
+
+							//Demo
+							layui.use('form', function() {
+								var form = layui.form;
+
+								//监听提交
+								form.on('submit(formDemo)', function(data) {
+									layer.msg(JSON.stringify(data.field));
+									return false;
+								});
+							});
+						</script>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer_t">
+				<div class="footer_t_main clearfix">
+					<a href="index.html" class="footer_logo left"></a>
+					<div class="left footer_menu clearfix">
+						<a href="#">关于我们 </a><span>&nbsp;|&nbsp;</span>
+						<a href="#">法律声明</a><span> &nbsp;|&nbsp;</span>
+						<a href="#">手续费率</a><span> &nbsp;|&nbsp;</span>
+						<a href="#">意见反馈</a>
+					</div>
+					<a href="#" class="right wb">关注我们</a>
+				</div>
+			</div>
+			<div class="footer_b">
+				<div class="jz clearfix">
+					<span>© 2017 河南省郑州市金多投资管理有限公司 </span>
+					<span>QQ群1：213365551 </span>
+					<span>豫ICP备100000000 </span>
+					<span class="beian">豫公网安备 00000000000000号</span>
+				</div>
+			</div>
+		</div>
+		<div class="bg"></div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>
