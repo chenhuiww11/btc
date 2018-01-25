@@ -45,7 +45,7 @@ img{
 	width: 100%;
 	height: 100%;
 	background: #000;
-	display: none;
+	//display: none;
 	z-index: 1;
 }
 .loadPic{
@@ -68,13 +68,13 @@ img{
 	z-index:-1;
  }
 .finishPage{
-	display:none;
+	display: none;
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: url(../img/endgb1.gif) no-repeat center center;
-	background-size: 100% 100%;
+	background: #0681a3;
 	z-index: 11;
+	overflow: hidden;
 }
 .btns{
 	width: 92%;
@@ -84,6 +84,7 @@ img{
 	bottom: 10%;
 	margin: 0 auto;
 	text-align: center;
+	z-index: 999;
 }
 .btns p{
 	display: inline-block;
