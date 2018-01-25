@@ -84,7 +84,7 @@
 		    <video 
 		    id="videoALL" 
 		    preload="auto"
-		    src="http://file.40017.cn/img140017cnproduct/touch/pushcode/demo.mp4"
+		    src="http://www.lesihang.top/TD/resource/media/TD.mp4"
 		    webkit-playsinline="true"
 		    playsinline="true"
 		    x5-video-player-type="h5" 
@@ -114,20 +114,17 @@
 		<script type="text/javascript" src="js/index.js"></script>
 		 <script>
 		 	 var arr=[
-		 	        'http:./img/endgb.png', 
-                	'http:img/Comp-1.gif.gif',
+		 	        'http://www.lesihang.top/TD/resource/assets/Comp-1.gif', 
                 ]
 		 	var cont=0;
+		 	var state=false;
         	for(var i=0;i<arr.length;i++){
-        		
         	var img = new Image(); //创建一个Image对象，实现图片的预下载 
-			img.src = arr[i]; 
-			img.onload = function () { //图片下载完毕时异步调用callback函数。 
-				cont++
-				if(cont==arr.length){
-					document.getElementById("progres").style.width="100%";
-				}
-			}; 
+				img.src = arr[i]; 
+				img.onload = function () { //图片下载完毕时异步调用callback函数。 
+				state=true;
+				$('.begin').text('开始我的表演')
+				} 
         	}
 		 	
 		 	
@@ -135,13 +132,13 @@
 		 	var pro=0;//设置进度条的初始值
 				var proBar = setInterval(function(){
 				pro++;
+				console.log(pro)
 				document.getElementById("progres").style.width=pro+"%";
-				
-				if(pro == 99){
-					$('.begin').text('开始我的表演')
+				if(state){
+					document.getElementById("progres").style.width=100+"%";
 				    clearInterval(proBar);
 				}
-				},10);
+				},500);
 				
 				
 				
