@@ -79,11 +79,16 @@ $(function() {
 			$('.loadPage').hide().css('z-index', '-1')
 		})
 		//分享按钮
+		var first=true
 		$('.shareBtn').on('click', function() {
+			if(first){
 			 $('.jinbi').show();
+			 first=false
 			 setTimeout(function(){
 			 	$('.jinbi').hide();
+			 	first=true
 			 },3000)
+			 }
 		});
 		$('#shareBox').on('touchstart', function(event) {
 			event.stopPropagation()
