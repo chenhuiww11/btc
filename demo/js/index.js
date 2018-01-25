@@ -141,8 +141,11 @@ $(function() {
 
 			if(state||pro==100) {
 				clearInterval(proBar);
+				$('.pic').show()
+				$('.loadpress').hide()
 				document.getElementById("progres").style.width = "100%";
-					$('.begin').text('开始我的表演')
+					$('.begin').text('点击开始你的表演')
+					$('.begin').addClass('small')
 			}
 		}, 100);
 		var width = document.documentElement.clientWidth;

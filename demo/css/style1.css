@@ -45,7 +45,7 @@ img{
 	width: 100%;
 	height: 100%;
 	background: #000;
-	//display: none;
+	/*display: none;*/
 	z-index: 1;
 }
 .loadPic{
@@ -81,18 +81,18 @@ img{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 10%;
+	bottom: 4%;
 	margin: 0 auto;
 	text-align: center;
 	z-index: 999;
 }
 .btns p{
 	display: inline-block;
-	width: 40%;
+	width: 49%;
 	height: 100px;
 }
 .btns p.shareBtn{
-	margin-left: 5%;
+	margin-left: 0.5%;
 }
 #shareBox{
 	position: fixed;

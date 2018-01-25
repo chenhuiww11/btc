@@ -40,19 +40,21 @@
 				color: #FFF;
 				font-size: 18px;
 				text-align: center;
-				margin-top: 20px;
+				margin-top: 10px;
+				text-indent: 4px;
 			}
 			
 			.btn {
-				width: 94%;
+				width: 100%;
 				position: relative;
 				top: -7rem;
 			}
 			
 			.btn1 {
-				width: 60%;
-				position: relative;
-				z-index: 2;
+				    width: 70%;
+				    position: relative;
+				    z-index: 2;
+				    top: 1.2rem;
 			}
 			
 			.loadinga {
@@ -60,8 +62,8 @@
 			}
 			
 			.ms {
-				width: 80%;
-				margin: 52% auto 0;
+				width: 90%;
+				margin: 45% auto 0;
 				position: relative;
 				text-align: center;
 			}
@@ -70,7 +72,7 @@
 				width: 95%;
 				position: absolute;
 				left: 0.6rem;
-				top: -13.6rem;
+				top: -12rem;
 			}
 			
 			.jinbi {
@@ -90,7 +92,16 @@
 				top: -13.5rem;
 				opacity: 0.8;
 			}
-			
+			.pic{
+				width: 95px;
+				height: 40px;
+				margin: 4px auto;
+				display: none;
+			}
+			.small{
+				font-size:10px;
+				margin-top: 4px;
+			}
 			#videoALL {
 				transform: rotate(90deg);
 				-ms-transform: rotate(90deg);
@@ -112,9 +123,6 @@
 	</head>
 
 	<body>
-		<!--<audio id = 'bgmusic' autoplay="autoplay" preload="auto" loop="loop">
-			<source src="https://file.40017.cn/scyx/activity/2018/2018qp/img/music1.mp3" type="audio/mp3"></source>
-		</audio>-->
 		<div class="loadPage flexHrien">
 			<div class="loadingc">
 				<img src="img/loading.gif" class="loadinga" />
@@ -122,6 +130,9 @@
 					<div class="inloadpress" id="progres">
 
 					</div>
+				</div>
+				<div class="pic">
+					<img src="img/startbtn.png" class="begin pic"/>
 				</div>
 				<div class="begin">
 					loading...
@@ -146,8 +157,8 @@
 				<img src="img/333.gif" class="aaaa" />
 			</div>
 			<div class="btns">
-				<p class="linkBtn"><img src="img/sharekuaile.png" /></p>
 				<p class="shareBtn"><img src="img/haoyunxunhuan.png" /></p>
+				<p class="linkBtn"><img src="img/sharekuaile.png" /></p>
 			</div>
 		</div>
 		<script>
