@@ -124,7 +124,7 @@ $(function() {
 				if(cont == arr.length) {
 					setTimeout(function(){
 						state=true
-					},3000)
+					},2800)
 				}
 			};
 		}
