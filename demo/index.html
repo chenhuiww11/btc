@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html phone = '1'>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="x5-fullscreen" content="true">
+	<meta name="full-screen" content="yes">
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>团贷网</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		.loadpress{
+			width: 180px;
+			height: 6px;
+			border: 2px solid #fff;
+			border-radius:99px;
+			position: relative;
+		}
+		.loadingc{
+			margin: 0 auto;
+			text-align: center;
+			position: relative;
+   			top: -8%;
+		}
+		.inloadpress{
+			width: 0%;
+			height: 5px;
+			border: 2px solid #fff;
+			border-radius:99px;
+			position: absolute;
+			left: -2px;
+			background: #FFFFFF;
+		}
+		.begin{
+			color: #FFF;
+			font-size: 18px;
+			text-align: center;
+			margin-top: 20px;
+		}
+		.btn{
+			width: 88%;
+		    position: relative;
+		    top: -69px;
+		}
+		.btn1{
+			width: 65%;
+		    position: relative;
+		    z-index: 2;
+		}
+		.loadinga{
+			width: 100px;
+		}
+		.ms{
+			width: 80%;
+    		margin: 50% auto 0;
+    		position: relative;
+    		text-align: center;
+		}
+	</style>	
+	</head>
+	<body>
+		<!--<audio id = 'bgmusic' autoplay="autoplay" preload="auto" loop="loop">
+			<source src="https://file.40017.cn/scyx/activity/2018/2018qp/img/music1.mp3" type="audio/mp3"></source>
+		</audio>-->
+		<div class="loadPage flexHrien">
+				<div class="loadingc">
+					<img src="img/loading.gif" class="loadinga"/>
+					<div class="loadpress">
+						<div class="inloadpress" id="progres">
+							
+						</div>
+					</div>
+					<div class="begin">
+							loading...
+						</div>
+				</div>
+				<!--<img src="img/5.png"/>-->
+				<img src="img/tishi.png" class="dibu"/>
+				<!--<img src="//file.40017.cn/scyx/activity/2018/2018qp/img/loading.gif" />-->
+				<!--<span class="progress">0</span></p>-->
+		</div>
+		
+		<div id="videobox">
+		    <video 
+		    id="videoALL" 
+		    preload="auto"
+		    src="http://file.40017.cn/img140017cnproduct/touch/pushcode/demo.mp4"
+		    webkit-playsinline="true"
+		    playsinline="true"
+		    x5-video-player-type="h5" 
+		    x5-video-player-fullscreen="true"
+		    style="object-fit:fill"
+		    ></video> 
+		</div>
+		<div class="finishPage">
+			<!--<div class="ms">
+				<img src="img/yundong.gif" class="btn1"/>
+				<img src="img/wt.png" class="btn"/>
+			</div>-->
+			<!--<img src="img/zi.gif"/>-->
+			<!--<div class="btns">
+				<p class="linkBtn"><img src="img/haoyunxunhuan.png" /></p>
+				<p class="shareBtn"><img src="img/sharekuaile.png" /></p>
+			</div>-->
+			<!--<img src="img/Comp-1.gif"/>-->
+			<div class="btns">
+				<p class="linkBtn"></p>
+				<p class="shareBtn"></p>
+			</div>
+		</div>
+		<script type="text/javascript" src="//file.40017.cn/tcweb/swact/20170518hls/js/zepto.min.js"></script>
+		<script src="//file.40017.cn/scyx/activity/2017/2017ssy/js/preloadjs.min.js"></script>
+		<script src="//res.wx.qq.com/open/js/jweixin-1.3.0.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		 <script>
+		 	 var arr=[
+		 	        'http:./img/endgb.png', 
+                	'http:img/Comp-1.gif.gif',
+                ]
+		 	var cont=0;
+        	for(var i=0;i<arr.length;i++){
+        		
+        	var img = new Image(); //创建一个Image对象，实现图片的预下载 
+			img.src = arr[i]; 
+			img.onload = function () { //图片下载完毕时异步调用callback函数。 
+				cont++
+				if(cont==arr.length){
+					document.getElementById("progres").style.width="100%";
+				}
+			}; 
+        	}
+		 	
+		 	
+		 	
+		 	var pro=0;//设置进度条的初始值
+				var proBar = setInterval(function(){
+				pro++;
+				document.getElementById("progres").style.width=pro+"%";
+				
+				if(pro == 99){
+					$('.begin').text('开始我的表演')
+				    clearInterval(proBar);
+				}
+				},10);
+				
+				
+				
+				
+		 	var width = document.documentElement.clientWidth;  
+				  var height =  document.documentElement.clientHeight;  
+				  if( width < height ){  
+				      console.log(width + " " + height);  
+				      var print =  $('#videoALL');  
+				       print.css('width',  height);  
+				      print.css('height',  width);  
+				       print.css('top',  (height-width)/2 );
+      				print.css('left',  0-(height-width)/2 );
+				      print.css('transform' , 'rotate(90deg)');  
+				      print.css('transform-origin' , '50% 50%');  
+				 } 
+//	    	var audio=document.querySelector("#bgmusic");
+//			    document.addEventListener("WeixinJSBridgeReady",function(){
+//				audio.play();
+//				audio.loop = true;
+//			},false);
+	    </script>
+		
+	</body>
+	
+</html>
