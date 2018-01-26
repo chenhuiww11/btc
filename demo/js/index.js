@@ -87,7 +87,7 @@ $(function() {
 			 setTimeout(function(){
 			 	$('.jinbi').hide();
 			 	first=true
-			 },3000)
+			 },2000)
 			 }
 		});
 		$('#shareBox').on('touchstart', function(event) {
@@ -183,25 +183,5 @@ $(function() {
 		playVideo()
 		bindEvent()
 	}
-	window.wx && wx.ready && wx.ready(function() {
-		var isWxApp = '';
-		isWxApp = window.__wxjs_environment === 'miniprogram';
-		isFlag = isWxApp
-		if(isWxApp) {
-			$('.shareBtn').hide();
-			$('.finishPage').css({
-				'background': 'url(//file.40017.cn/scyx/activity/2018/2018qp/img/last_bg1.png) no-repeat center center',
-				'background-size': '100% 100%'
-			})
-			document.addEventListener("visibilitychange", function() {
-				if(document.hidden) {
-					$('#videoALL')[0].pause();
-					var audio = document.querySelector("#bgmusic");
-					//		    	 audio.pause();
-				}
-			});
-
-		}
-	});
 	init()
 })
