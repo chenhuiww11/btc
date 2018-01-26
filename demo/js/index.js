@@ -117,9 +117,30 @@ $(function() {
 			'./img/111.png',
 			'./img/222.gif',
 			'./img/333.gif',
+			'./img/1 (1).png',
+			'./img/1 (2).png',
+			'./img/1 (3).png',
+			'./img/1 (4).png',
+			'./img/1 (5).png',
+			'./img/1 (6).png',
+			'./img/1 (7).png',
+			'./img/1 (8).png',
+			'./img/1 (9).png',
 		]
 		var cont = 0;
 		var state=false;
+		var dizhi=4;
+		setInterval(function(){
+			$('.people').attr('src',arr[dizhi])
+			dizhi++
+			if(dizhi>=arr.length){
+				dizhi=4
+			}
+		},400)
+		
+		
+		
+		
 		for(var i = 0; i < arr.length; i++) {
 
 			var img = new Image(); //创建一个Image对象，实现图片的预下载 
