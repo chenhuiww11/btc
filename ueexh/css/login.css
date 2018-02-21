@@ -1,0 +1,97 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #22252d;
+	overflow: hidden;
+}
+.login{
+	width: 895px;
+	height: 820px;
+	margin: 80px auto 0;
+	background: url(../img/loginbg.png) no-repeat center;
+	box-sizing: border-box;
+	padding-top: 150px;
+	
+}
+.inlogin{
+	width: 700px;
+	min-height: 400px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	background: rgba(38,42,50,0.6);
+	text-align: center;
+}
+.loginpic{
+	width: 100px;
+	padding-top: 45px;
+}
+.loginbd{
+	width: 290px;
+	margin: 20px auto 0;
+}
+.loginbd input{
+	width: 300px;
+	height: 50px;
+	margin-bottom: 10px;
+	background: rgba(52,56,66,0.8);
+	border-radius: 4px;
+	text-indent: 10px;
+	color: #FFF;
+}
+.yanzheng{
+	width: 300px;
+	height: 50px;
+	margin-bottom: 10px;
+	background: rgba(52,56,66,0.8);
+	border-radius: 4px;
+	text-indent: 10px;
+	color: #ff9b26;
+	position: relative;
+	line-height: 50px;
+	text-indent: 0;
+	font-size: 14px;
+}
+.yanzheng .suceess{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 70px;
+	height: 100%;
+	background: rgba(85,92,105,0.5);
+	border-radius:4px;
+	line-height: 50px;
+}
+.yanzheng .suceesspic{
+	width: 22px;
+	height: 22px;
+}
+.denglu{
+	width: 300px;
+	height: 50px;
+	margin-bottom: 10px;
+	background: #ff9b26;
+	border-radius: 4px;
+	text-indent: 10px;
+	color: #FFF;
+	line-height: 50px;
+	font-size: 14px;
+}
+.logininfo{
+	width: 300px;
+	height: 20px;
+	font-size: 14px;
+	overflow: hidden;
+}
+.forget{
+	color: #ff9b26;
+	float: left;
+	cursor: pointer;
+}
+.forgetright{
+	color: #ff9b26;
+	float: right;
+	cursor: pointer;
+}
+.common{
+	color: #838fa1;
+}

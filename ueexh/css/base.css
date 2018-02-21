@@ -1,0 +1,218 @@
+@charset "UTF-8";
+*,
+:focus,
+a,
+a:active,
+a:hover {
+	outline: 0
+}
+
+*,
+img {
+	border: 0
+}
+
+.data-loading,
+body {
+	background: #f2f4f7
+}
+
+.data-loading .loading-text,
+.loading .loading_text {
+	color: #999;
+	font-size: 14px
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none
+}
+
+input,
+textarea {
+	-webkit-touch-callout: inherit;
+	-webkit-user-select: text
+}
+
+body {
+	overflow-x: hidden;
+	font-size: 12px
+}
+
+ul {
+	list-style: none
+}
+
+a {
+	text-decoration: none!important
+}
+
+em {
+	font-style: normal
+}
+
+img {
+	vertical-align: middle;
+	width: 100%
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both
+}
+
+.hide,
+.ng-cloak {
+	display: none
+}
+
+.oh {
+	overflow: hidden
+}
+
+/*头部样式*/
+header{
+	width: 100%;
+	height: 100px;
+	background: #181c1f;
+}
+.center{
+	width: 940px;
+	margin: 0 auto;
+}
+.header{
+	height: 100%;
+	overflow: hidden;
+	
+}
+.header .pic{
+	float: left;
+}
+.header .pic>img{
+	padding-top: 20px;
+}
+.header .nav{
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	margin-left: 40px;
+}
+.header .nav li{
+	width: 98px;
+	height: 100%;
+	float: left;
+	color: #FFF;
+	line-height: 100px;
+	font-size: 14px;
+	
+}
+.header .headerpic{
+	width: 20px;
+	height: 20px;
+	padding-right: 10px;
+}
+.header .nav li>span{
+	position: relative;
+	top: 2px;
+}
+.header .city{
+	float: right;
+	height: 100%;
+	overflow: hidden;
+	line-height: 100px;
+}
+/*头部样式结束*/
+/*底部样式*/
+footer{
+	width: 100%;
+	background: #181c1f;
+}
+.footer{
+	height: 100%;
+	overflow: hidden;
+	padding: 30px 0;
+	
+	
+}
+.footerinfo{
+	height: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #4d5963;
+	
+}
+.footerinfo .service{
+	padding-bottom: 20px;
+	width: 85%;
+	border-bottom: 1px solid #4d5963;
+}
+.footerinfo .serviceinfo{
+	padding-top: 20px;
+	width: 85%;
+}
+.footerinfo li{
+	width: 33.333%;
+	float: left;
+	height: 100%;
+	color: #FFF;
+	font-size: 14px;
+    text-align: center;
+}
+.footerpic{
+	width: 16px;
+	height: 16px;
+	padding-right: 4px;
+}
+.footerinfo .serviceinfo>p{
+	margin-bottom: 20px;
+}
+.footerinfo .iconpic{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+.footerdes{
+	text-align: center;
+    color: #FFF;	
+   padding-top: 10px;
+}
+/*导航*/
+nav{
+	width: 100%;
+	height: 40px;
+	background: #806c52;
+}
+.name{
+	line-height: 40px;
+	float: right;
+	color: #FFF;
+	font-size: 14px;
+}
+.daohang{
+	background: url(../img/nav.png) no-repeat;
+	width: 92px;
+	height:40px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #FFFFFF;
+	background-size:100% 100%;
+	float: left;
+	text-indent: 20px;
+}
+.content{
+	width: 100%;
+	min-height: 600px;
+	background: #f1f2f6;
+	padding: 20px 0 40px 0;
+}
+.incenter{
+	margin-top: 10px;
+	min-height: 560px;
+	background: #FFF;
+	box-sizing: border-box;
+	padding: 20px 40px;
+}

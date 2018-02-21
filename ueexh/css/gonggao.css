@@ -1,0 +1,67 @@
+.daohang{
+	width: 120px;
+}
+.daohongicon{
+	width: 20px;
+	height: auto;
+	padding-right: 10px;
+}
+.title{
+	height: 60px;
+	width: 940px;
+	margin: 0 auto 10px;
+	background: #FFF;
+	box-sizing: border-box;
+	padding-left: 40px;
+}
+.title h3{
+	font-size: 16px;
+	color: #838fa1;
+	line-height: 60px;
+}
+.bugao{
+	height: 510px;
+	overflow: hidden;
+}
+.bugao li{
+	width: 50%;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+
+}
+.bugao li:nth-child(1){
+	padding-right: 10px;
+}
+.bugao li:nth-child(2){
+	padding-left: 10px;
+}
+.inbugao{
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	box-sizing: border-box;
+	padding: 20px;
+}
+.inbugao h2{
+	font-size:16px;
+	color:#838fa1;
+	padding-bottom: 10px;
+	border-bottom:1px solid #f1f2f6;
+}
+.inbugao .xinxi{
+	font-size:16px;
+	color:#838fa1;
+	padding: 20px 0 10px 0;
+	border-bottom:1px solid #f1f2f6;
+}
+.inbugao .allxinxi{
+	height: 416px;
+	overflow: hidden;
+}
+.allpage{
+	font-size: 16px;
+	color: #ff9b26;
+	text-align: center;
+	padding-top: 10px;
+}

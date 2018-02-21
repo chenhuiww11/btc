@@ -1,0 +1,18 @@
+.shengming{
+	font-size: 16px;
+	color: #9fa7b5;
+}
+.falvinfo{
+	font-size:14px;
+	color: #a7afbb;
+	margin-top: 20px;
+}
+.falvinfo p{
+	line-height: 1.8;
+}
+.bold{
+	font-weight: 600;
+}
+.bottom{
+	margin-bottom: 20px;
+}
