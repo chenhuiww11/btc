@@ -1,0 +1,260 @@
+.daohang{
+	width: 120px;
+}
+.daohongicon{
+	width: 20px;
+	height: auto;
+	padding-right: 10px;
+}
+.title{
+	height: 60px;
+	width: 940px;
+	margin: 0 auto 10px;
+	background: #ff9b26;
+	box-sizing: border-box;
+	padding-left: 40px;
+	overflow: hidden;
+}
+.title h3{
+	font-size: 16px;
+	color: #fff;
+	line-height: 60px;
+	float: left;
+}
+.close{
+	float: right;
+	margin-right: 20px;
+	line-height: 60px;
+	color: #FFF;
+	font-size: 14px;
+}
+.gn{
+	width: 100%;
+	background: #FFF;
+}
+.ziliaoku{
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 50px;
+	font-size: 18px;
+	color: #838fa1;
+}
+.ziliaoku h2{
+	font-size: 28px;
+	color: #806c52;
+	margin-bottom: 10px;
+}
+.shouyelogin{
+	width: 100%;
+	background: #FFF;
+	position: relative;
+}
+.bzxx{
+	height: 198px;
+	width: 938px;
+	margin: 20px auto 40px;
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+.bzxx li{
+	width: 25%;
+	height: 100%;
+	float: left;
+	color: #838fa1;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+}
+.bzxx li>img{
+	width: 90px;
+	height: 90px;
+	margin: 40px 0 20px 0;
+}
+.bzxx .line{
+	width: 1px;
+	position: absolute;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+	background: #ddd;
+}
+/*上币信息*/
+.sbinfo{
+	width: 100%;
+	background:#202128 url(../img/ditu_02.png) no-repeat center;
+	min-height: 400px;
+	margin-top: 40px;
+}
+.wapper{
+	overflow: hidden;
+	min-height: 200px;
+	position: relative;
+	top: -20px;
+	left: 0;
+}
+.wapper .tab{
+	height: 60px;
+	overflow: hidden;
+	background: #1f2026;
+}
+.wapper .tab li{
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	float: left;
+	line-height: 50px;
+	color: #fff;
+	font-size: 16px;
+}
+.wapper .tabstate{
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.wapper .tabstate li{
+	height: 40px;
+	text-align: center;
+	float: left;
+	line-height: 40px;
+	color: #acbcd4;
+	font-size: 12px;
+	background: #33343a;
+	margin-left: 1%;
+}
+.wapper .tabstate li:nth-child(1){
+	width: 12.55%;
+	margin-left: 0;
+}
+.wapper .tabstate li:nth-child(2){
+	width: 12.55%;
+}
+.wapper .tabstate li:nth-child(3){
+	width: 25%;
+}
+.wapper .tabstate li:nth-child(4){
+	width: 9.6%;
+}
+.wapper .tabstate li:nth-child(5){
+	width: 9.6%;
+}
+.wapper .tabstate li:nth-child(6){
+	width: 9.6%;
+}
+.wapper .tabstate li:nth-child(7){
+	width: 14.8%;
+}
+.wapper .tabcontent{
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+.wapper .tabcontent li{
+	height: 40px;
+	text-align: center;
+	float: left;
+	line-height: 40px;
+	color: #fff;
+	font-size: 12px;
+	background: #33343a;
+	margin-left: 1%;
+	overflow: hidden;
+}
+
+.wapper .tabcontent li:nth-child(1){
+	width: 5.8%;
+	margin-left: 0;
+}
+.wapper .tabcontent li:nth-child(2){
+	width: 5.8%;
+}
+.wapper .tabcontent li:nth-child(3){
+	width: 12.55%;
+}
+.wapper .tabcontent li:nth-child(4){
+	width: 25%;
+}
+.wapper .tabcontent li:nth-child(5){
+	width: 9.6%;
+}
+.wapper .tabcontent li:nth-child(6){
+	width: 9.6%;
+}
+.wapper .tabcontent li:nth-child(7){
+	width: 9.6%;
+}
+.wapper .tabcontent li:nth-child(8){
+	width: 14.8%;
+}
+
+
+
+.wapper .tab .tabactive{
+	background: url(../img/tabactive.png) no-repeat center;
+}
+.tabpic{
+	width: 15px;
+	margin-left: 15px;
+}
+.tabpic1{
+	width: 15px;
+}
+.denglu{
+	width: 330px;
+	height: 30px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -165px;
+}
+.dengluleft{
+	width: 45%;
+	height: 100%;
+	border: 1px solid #FFF;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+	color: #FFF;
+	border-radius:4px
+}
+.dengluright{
+	width: 45%;
+	height: 100%;
+	border: 1px solid #FFF;
+	text-align: center;
+	line-height: 30px;
+	float: right;
+	background: #ffffff;
+	color: #ed9023;
+	border-radius:4px
+}
+.mSlider{position:relative;width:940px;height:382px;}
+.mSlider_con{width:100%;height:382px;overflow:hidden;}
+.mSlider_con .slider_ul{margin:0px;padding:0px;list-style-type:none;width:6000px;z-index:0;height:382px;}
+.mSlider_con .slider_ul li{float:left;overflow:hidden;margin:0px;padding:0px;width:940px;}
+.mSlider_con img{height:382px;border:0px;}
+.mSlider5{width:100%;height:382px;}
+.mSlider5 .mSlider_con{width:100%;height:382px;}
+.mSlider5 .mSlider_con .slider_ul{height:382px;}
+.mSlider5 .mSlider_con .slider_ul li{width:100%;height:382px;padding:0 10px}
+.mSlider5 img{width:100%;height:382px;;display:block;}
+.mSlider_nav{
+	display: none;
+}
+.bt5{
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	background: url(../img/lunbo1.png) no-repeat;
+	width: 50px;
+	height: 50px;
+}
+.nbt5{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	background: url(../img/lunbo2.png) no-repeat;
+	width: 50px;
+	height: 50px;
+}

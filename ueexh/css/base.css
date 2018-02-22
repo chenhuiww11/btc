@@ -126,7 +126,46 @@ header{
 	overflow: hidden;
 	line-height: 100px;
 }
+.header .navactive{
+	background: url(../img/30.png) no-repeat;
+}
+.header .citymore{
+	width: 122px;
+    height: 90px;
+    position: absolute;
+    top: 100px;
+    right: 14%;
+    background: #181c1f;
+    z-index: 22;
+    box-sizing: border-box;
+    padding: 0 10px 10px 10px;
+    color: #FFF;
+    display: none;
+    cursor: pointer;
+}
+.header .citymoretab{
+	margin-top: 10px;
+}
 /*头部样式结束*/
+/*悬浮样式*/
+.xuanfu{
+	width: 55px;
+	position: fixed;
+	right: 10px;
+	top: 50%;
+	min-height: 50px;
+}
+.xuanfu .pic{
+	width: 100%;
+	height: 55px;
+	background: #f8f8f8;
+	text-align: center;
+	line-height: 55px;
+	
+}
+.xuanfu .pic>img{
+	width: 28px;
+}
 /*底部样式*/
 footer{
 	width: 100%;
