@@ -47,7 +47,9 @@
 }
 .shouyelogin{
 	width: 100%;
-	background: #FFF;
+	height: 200px;
+	background: url(../img/gn/denglu.jpg) no-repeat center;
+	background-size:cover;
 	position: relative;
 }
 .bzxx{
@@ -258,3 +260,4 @@
 	width: 50px;
 	height: 50px;
 }
+.pic{}
