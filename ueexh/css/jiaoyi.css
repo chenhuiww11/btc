@@ -328,3 +328,121 @@
 	top: 4px;
 	background: #ddd;
 }
+.buyright{
+	box-sizing: border-box;
+	padding: 10px;
+}
+.buyselect{
+	border-bottom: 1px solid #dddddd;
+}
+.buyselect1{
+	width: 50px;
+	height: 30px;
+	border-radius: 4px;
+	background: #f1f2f6;
+	text-align: center;
+	line-height: 30px;
+	float: left;
+	color: #939dad;
+	margin-bottom: 10px;
+}
+.activea{
+	background: #ff9b26;
+	color: #FFF;
+}
+.left{
+	margin-left: 10px;
+}
+.dangwei{
+	float: right;
+	width:70px;
+	height: 30px;
+	color: #939dad;
+	box-sizing: border-box;
+	padding-top: 6px;
+}
+.dangwei span{
+	float: left;
+	padding-top: 2px;
+}
+.dangwei select{
+	float: left;
+	border: 1px solid #ddd;
+	margin-left: 4px;
+}
+.buyselectall li{
+	height: 28px;
+	float: left;
+	line-height: 28px;
+	font-size: 12px;
+	color: #838fa1;
+}
+.buyselectall li:nth-child(1){
+	width: 60px;
+}
+.buyselectall li:nth-child(2){
+	width: 100px;
+}
+.buyselectall li:nth-child(3){
+	width: 100px;
+}
+.buyselectall li:nth-child(4){
+	width: 100px;
+}
+.buyselectall .red{
+	color: #f94d4d;
+}
+.buyselectall .lan{
+	color: #4bdde2;
+}
+.bottom{
+	border-bottom: 1px solid #ddd;
+}
+.newcj{
+	width: 1088px;
+	height: 178px;
+	border: 1px solid #ddd;
+	background: #FFF;
+	margin-top:10px;
+	box-sizing: border-box;
+	padding: 10px 20px;
+}
+.newcj h2{
+	color: #838fa1;
+	font-size: 14px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #DDDDDD;
+	font-weight: 100;
+}
+.cjlist{
+	width: 100%;
+	height: 40px;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-top: 10px;
+	color: #838fa1;
+}
+.cjlist li{
+	float: left;
+	width: 20%;
+	
+}
+.mygd{
+	border-bottom: 1px solid #ddd;
+}
+.mygd1{
+	text-align: center;
+	width: 146px;
+	float: left;
+	font-size: 14px;
+	padding: 10px 0;
+	color: #838fa1;
+}
+.mygdxz{
+	color: #ff9b26;
+	border-bottom: 2px solid #ff9b26;
+}
+.caozuo{
+	float: right;
+	margin-right: 10px;
+}

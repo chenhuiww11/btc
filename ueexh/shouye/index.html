@@ -21,23 +21,23 @@
 					<img src="../img/01.png" />
 				</div>
 				<ul class="nav">
-					<li class="navactive">
+					<li class="navactive" onclick="jump(1)">
 						<img src="../img/02.png" class="headerpic" />
 						<span>首页</span>
 					</li>
-					<li>
+					<li onclick="jump(2)">
 						<img src="../img/03.png" class="headerpic" />
 						<span>交易</span>
 					</li>
-					<li>
+					<li onclick="jump(3)">
 						<img src="../img/04.png" class="headerpic" />
 						<span>资产</span>
 					</li>
-					<li>
+					<li onclick="jump(4)">
 						<img src="../img/05.png" class="headerpic" />
 						<span>安全</span>
 					</li>
-					<li>
+					<li onclick="jump(5)">
 						<img src="../img/06.png" class="headerpic" />
 						<span>公告</span>
 					</li>
@@ -354,10 +354,10 @@
 		<div class="shouyelogin">
 			<img src="../img/gn/denglu.jpg"/>
 			<div class="denglu">
-				<div class="dengluleft">
+				<div class="dengluleft" onclick="jump(8)">
 					登陆
 				</div>
-				<div class="dengluright">
+				<div class="dengluright" onclick="jump(9)">
 					注册
 				</div>
 			</div>	
@@ -435,6 +435,7 @@
 		<!--底部开始-->
 		</section>
 	</body>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
 			var slider = $("#mSlider5 .mSlider_con").slider({
@@ -464,7 +465,6 @@
 			$('.city').click(function(){
 				$('.citymore').show()
 			})
-			
 		});
 	</script>
 
