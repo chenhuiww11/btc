@@ -1,0 +1,677 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent
+}
+html, body{
+	height: 100%;
+	position: relative;
+	margin: 0;
+	-webkit-user-select:none;
+	-webkit-tap-highlight-color: transparent;
+}
+body{
+	background-color: #000018;
+	font-family: '微软雅黑';
+}
+a{
+	text-decoration: none;
+}
+#container{
+	width: 100%;
+	position: relative;
+	height: 100%;
+}
+#startgame{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+#gamepanel{
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+	#gamepanel, body, html{
+		width: 320px;
+		margin: 0 auto;
+	}
+}
+#stage{
+	background-color: #CCC;
+}
+
+.score-wrap {
+	    background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/countleft.png) no-repeat;
+    background-size: 100%;
+    color: #FFF;
+    font-family: "Helvetica","Microsoft YaHei",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    height: 45px;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 20px;
+    text-indent: 48px;
+    line-height: 41px;
+    top: 18px;
+    width: 82px;
+    z-index: 1005;
+}
+
+.score-wrap div {
+	background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/mooncake.png) no-repeat;
+    background-size: 100%;
+    height: 45px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 44px;
+    z-index: 1009;
+}
+/*倒计时*/
+.time{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    width: 82px;
+    z-index: 1005;
+    height: 80px;
+}
+.time .timecount{
+	background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/count.png) no-repeat;
+    background-size: 100%;
+    height: 80px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 75px;
+    z-index: 1009;
+}
+.time .jindu{
+	width: 166px;
+    height: 37px;
+    left: 32px;
+    position: absolute;
+    top: 28px;
+    background-size: contain;
+    background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/jindu.png) no-repeat;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.time .timetext{
+	font-size: 21px;
+	color: #744802;
+	font-weight: 600;
+	font-family: arial;
+	text-align: center;
+    padding-top: 30px;
+}
+.time .jindu1{
+	width: 100%;
+    height: 37px;
+    right: 0;
+    position: absolute;
+    top: 0px;
+    background-size: contain;
+    background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/jindu1.png) no-repeat;
+}
+
+
+div.hearthot {
+	-webkit-animation: fire .2s linear;
+	-o-animation: fire .2s linear;
+	animation: fire .2s linear
+}
+
+@-webkit-keyframes fire {
+	0% {
+		opacity: 1;
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		transform: scale(1.1)
+	}
+
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(3.0);
+		-moz-transform: scale(3.0);
+		-ms-transform: scale(3.0);
+		-o-transform: scale(3.0);
+		transform: scale(3.0)
+	}
+}
+
+@keyframes fire {
+	0% {
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		transform: scale(1.1)
+	}
+
+	100% {
+		-webkit-transform: scale(1.0);
+		-moz-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		-o-transform: scale(1.0);
+		transform: scale(1.0)
+	}
+}
+
+
+#success{
+	height: 100%;
+    left: 0;
+    width: 100%;
+    overflow-y: scroll;
+    z-index: 10000;
+    background: #f6f6f6;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+
+#start{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+#start>img{
+	width: 100%;
+	
+}
+.startbtn{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/start.png) no-repeat;
+}
+.statraniu{
+	width: 50%;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.startbtn .rule{
+	width: 60%;
+    position: absolute;
+    top: 76px;
+	left: 50%;
+	transform: translateX(-50%);
+	overflow: hidden;
+}
+.startbtn .rule li{
+	width: 50%;
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	color: #ffc346;
+	position: relative;
+}
+.startbtn .line{
+	height: 12px;
+	width: 1px;
+	background: #ffc346;
+	opacity: 0.3;
+	position: absolute;
+	right:0;
+	top: 4px;
+}
+.statraniu>img{
+	width: 100%;
+}
+.startbtn>img{
+	width: 100%;
+}
+/*活动规则*/
+.startrule{
+	width: 302px;
+	height: 373px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	z-index: 22222;
+	display: none;
+}
+.close{
+	position: absolute;
+    right: 8%;
+    top: 6%;
+    width: 40px;
+    height: 40px;
+}
+/*填写手机号*/
+.layer {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 999999;
+		background: rgba(0, 0, 0, 0.8);
+}
+.tel{
+	width: 300px;
+	height: 260px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	z-index: 22222;
+	background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/zhongqiu.png) no-repeat;
+	background-size:contain;
+	box-sizing: border-box;
+    padding-top: 60px;
+}
+.telclose{
+	background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/icon_cancel.png) no-repeat;
+	background-size:contain;
+	height: 37px;
+	width: 37px;
+	margin: 28px auto 0;
+}
+.shuru{
+	width: 84%;
+	height: 44px;
+	border-radius:4px;
+	background: #ffffff;
+	margin: 0 auto;
+}
+.shuru>input{
+	width: 100%;
+	height: 44px;
+	border-radius:4px;
+	background: #ffffff;
+	font-size: 14px;
+	color: #333333;
+	text-indent: 10px;
+}
+.shuru1{
+	width: 84%;
+	height: 44px;
+	border-radius:4px;
+	background: #ffffff;
+	margin: 10px auto 0;
+	position: relative;
+}
+.shuru1>input{
+	width: 100%;
+	height: 44px;
+	border-radius:4px;
+	background: #ffffff;
+}
+.getcode{
+	position: absolute;
+	bottom: 16px;
+    right: 12px;
+	color: #3e2999;
+	font-size: 12px;
+	border-left:1px solid #3e2999;
+	box-sizing: border-box;
+	padding-left: 15px;
+}
+.queding{
+	width: 84%;
+	height: 44px;
+	border-radius:4px;
+	background: #ffc233;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 15px auto 0;
+	line-height: 44px;
+	font-size: 21px;
+}
+.telname{
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	opacity: 0.6;
+	margin-top: 8px;
+}
+#guidePanel {
+	background: rgba(0,0,0,0.6) url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/reminder.png) center 50% no-repeat;
+	background-size: 80%;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+	display: none;
+}
+#gameoverPanel {
+	background: rgba(0,0,0,0.8) url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/over.png) center 30% no-repeat;
+	background-size: 66%;
+	top: 0
+}
+
+#gameoverPanel,#resultPanel {
+	display: none;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 10000
+}
+
+#resultPanel{
+	/*background:url(../img/endpage.jpg) center top no-repeat;*/
+}
+
+#resultPanel,#resultPanel .weixin-share {
+	left: 0;
+	top: 0
+}
+#resultPanel .weixin-share {
+	background: rgba(0,0,0,.8) url(../img/weixin.png) right top no-repeat;
+	background-size: 212px 196px;
+	display: none;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 100
+}
+
+.replay {
+	background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/again.png) 0 0 no-repeat;
+	background-size:contain;
+	height: 45px;
+	position: absolute;
+	width: 151px;
+	z-index: 10;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 72%;
+	-webkit-transform: translateX(-50%);;
+}
+#resultPanel .panel,#scoreBoard .score-result {
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%
+}
+#fenghao{
+	height: 68px;
+	margin-top: 90px;
+}
+#scorecontent{
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+	line-height: 1.8em;
+	margin-top: 5px;
+}
+.lighttext{
+	color: #F6DE0A;
+}
+.geili{
+	background: url(../img/geili.png) center no-repeat;
+}
+.yinhen{
+	background: url(../img/yinhen.png) center no-repeat;
+}
+.textc{
+	text-align: center;
+}
+.btn1, .btn2{
+	display: inline-block;
+	width: 196px;
+	height: 54px;
+	line-height: 54px;
+	color: #FFF;
+	font-size: 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+.btn1{
+	margin-top: 22px;
+	background-color: #E8722C;
+}
+.btn2{
+	margin-top: 12px;
+	border: 1px solid #6A6B6D;
+
+}
+.scroename{
+	font-size: 29px;
+	color: #ffea00;
+	font-weight: 600;
+	position: absolute;
+	top: 44px;
+	left: 55px;
+	z-index: 2200;
+	display: none;
+}
+/*中奖列表*/
+.successlist{
+	width: 100%;
+	box-sizing: border-box;
+	padding:0px 10px 0 10px;
+}
+
+/*炫耀*/
+.xrzg{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 10px;
+	overflow: hidden;
+	margin-top: 22px;
+}
+.lqjp{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.lqjp>img{
+	width: 95%;
+}
+.xy{
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+.xy>img{
+	width: 90%;
+}
+.xyplay>img{
+	width: 90%;
+}
+.xyplay{
+	width: 50%;
+	text-align: center;
+	float: left;
+}
+.inlist{
+	width: 100%;
+	height: 75px;
+	border-radius:4px;
+	background: #FFF;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:15px 10px 15px 15px;
+	position: relative;
+	margin-bottom:10px;
+}
+.listpic{
+	float: left;
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	border-radius:50%;
+}
+.listinfo{
+	width: 60%;
+	height: 45px;
+	float: left;
+	margin-left: 20px;
+}
+.listname{
+	font-size: 16px;
+	font-weight: 600;
+	color: #333333;
+	width: 80%;
+}
+.listtime{
+	font-size: 12px;
+	padding-top: 4px;
+	color: #666;
+}
+.listuse{
+	width: 71px;
+	height: 27px;
+	background: #ff5346;
+	text-align: center;
+	line-height: 27px;
+	border-radius:2px;
+	font-size: 12px;
+	position: absolute;
+	right: 15px;
+	top: 24px;
+	color: #FFF;
+	z-index: 20;
+}
+/*app分享*/
+.layer1 {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2000;
+		background: rgba(0, 0, 0, 0.8);
+		overflow: hidden;
+		display: none;
+	}
+  .share{
+  	width: 100%;
+  	background: #FFF;
+  	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	z-index: 2;
+  }
+  .share ul{
+  	width: 100%;
+  	height: 100%;
+  }
+  .share ul li{
+  	width: 50%;
+  	height: 100%;
+  	float: left;
+  	text-align: center;
+  }
+  .share ul li>img{
+  	width: 50px;
+  	height: 50px;
+  	margin-top: 5px;
+  }
+  
+
+
+
+/*蒙层*/
+.layout {
+    z-index: 11111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+}
+
+.layContent {
+    z-index: 11111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #333;
+    width: 100%;
+}
+
+.layContent .lay-title {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-width: 0 0 1px 0;
+    -webkit-border-image: url(//appnew.ly.com/md/img/border.png) 2 0 stretch;
+    border-image: url(//appnew.ly.com/md/img/border.png) 2 0 stretch;
+    width: 100%;
+}
+
+.lay-title p {
+    margin-top: 40px;
+    color: #000;
+}
+
+.layContent .lay-cotent {
+    height: 80%;
+    overflow-y: scroll;
+    word-wrap:break-word;
+    padding:  20px  15px 0 15px;
+    color: #000;
+}
+
+.layContent .lay-cotent p {
+    font-size: 14px;
+    /*font-weight: bold;*/
+    padding-bottom: 5px;
+     color: #000;
+}
+
+.layContent .lay-cotent span {
+    font-size: 12px;
+    color: #000;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.closed {
+    position: fixed;
+    bottom: 7%;
+    left: 50%;
+    margin-left: -27px;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.closed img {
+    width: 55px;
+    height: 55px;
+}
+.icon{
+	width: 14px;
+    height: 14px;
+    background: url(//file.40017.cn/img140017cnproduct/touch/pushcode/zhongqiu/bg_hint.png) no-repeat;
+    background-size: contain;
+    display: -webkit-inline-box;
+    margin-left: 4px;
+    position: relative;
+    top: 2px;
+	
+}

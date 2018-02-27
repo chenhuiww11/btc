@@ -1,0 +1,5 @@
+ @font-face {
+    font-family: 'DINMedium';
+    src: url('./fontfile/DINMedium.ttf')  format('truetype'), /* IE9 Compat Modes */
+         url('./fontfile/DINMedium.svg#DIN Medium') format('svg'); /* Legacy iOS */
+   }

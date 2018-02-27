@@ -3,8 +3,10 @@
 }
 .daohongicon{
 	width: 20px;
-	height: auto;
-	padding-right: 10px;
+    height: auto;
+    padding-right: 10px;
+    float: left;
+    padding-top: 18px;
 }
 .title{
 	height: 60px;
@@ -31,6 +33,7 @@
 .gn{
 	width: 100%;
 	background: #FFF;
+	padding-bottom: 60px;
 }
 .ziliaoku{
 	width: 100%;
@@ -123,6 +126,9 @@
 	font-size: 12px;
 	background: #33343a;
 	margin-left: 1%;
+}
+.wapper .tabstate li:hover{
+	cursor: pointer;
 }
 .wapper .tabstate li:nth-child(1){
 	width: 12.55%;
@@ -260,4 +266,64 @@
 	width: 50px;
 	height: 50px;
 }
-.pic{}
+.gg{
+	float: left;
+}
+.gnname{
+	text-align: center;
+	font-size: 28px;
+	color: #806c52;
+	padding-top: 40px;
+	font-family: "微软雅黑";
+	font-weight: 100;
+	letter-spacing: 8px;
+}
+.gnpic{
+	width: 690px;
+	height: 277px;
+	margin:60px auto 0;
+}
+.gnpicleft{
+	width: 330px;
+	float: left;
+}
+.gnpicleft1{
+	width: 330px;
+	float: right;
+}
+.gnpicright1{
+	height: 200px;
+	width: 300px;
+	float: left;
+	margin-top: 60px;
+}
+.gnpicright{
+	margin-left: 360px;
+	height: 200px;
+	width: 310px;
+}
+.gntitles{
+	font-size: 18px;
+	color: #838fa1;
+	margin-bottom: 20px;
+	padding-top: 50px;
+}
+.gntitles1{
+	font-size: 14px;
+	color: #a7afbb;
+	margin-bottom: 10px;
+}
+.str_wrap{
+	width: 200px;
+	margin-top: 20px;
+	float: left;
+}
+.textright{
+	text-align: right;
+}
+.wapper .tabcontent .zhang{
+	color: red;
+}
+.wapper .tabcontent .die{
+	color: green;
+}

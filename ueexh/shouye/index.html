@@ -5,13 +5,13 @@
 		<meta charset="UTF-8">
 		<meta name="format-detection" content="telephone=no" />
 		<link rel="stylesheet" type="text/css" href="../css/base.css" />
+    	<link rel="stylesheet" href="../static/css/liMarquee.css" />
 		<link rel="stylesheet" type="text/css" href="../css/shouye.css" />
 		<link rel="stylesheet" type="text/css" href="../chajian/slider.css" />
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="../js/slider.js" type="text/javascript" charset="utf-8"></script>
 		<title>币</title>
 	</head>
-
 	<body>
 		<!--头部-->
 		<header>
@@ -103,7 +103,21 @@
 			<div class="title sbgg">
 				<h3>
 					<img src="../img/06.png" class="daohongicon" />
-					上币公告：uex有新币上线XXXXXX
+					<p class="gg">上币公告：</p>
+					<div class="wrapper dowebok" style="overflow:hidden;height:20px;" id="colee">
+						<ul class="luckMemeberList" id="colee1">
+							<li>
+								<p>132131313</p>
+							</li>
+							<li>
+								<p>132131313</p>
+							</li>
+							<li>
+								<p>132131313</p>
+							</li>
+						</ul>
+						<ul class="luckMemeberList" id="colee2"></ul>
+					</div>
 				</h3>
 				<div class="close">
 					X 关闭
@@ -157,7 +171,7 @@
 						<li>GXS</li>
 						<li>abcdefggg</li>
 						<li>0.124564646/45646</li>
-						<li>
+						<li class="zhang">
 							4.26%
 						</li>
 						<li>
@@ -177,8 +191,8 @@
 						<li>GXS</li>
 						<li>abcdefggg</li>
 						<li>0.124564646/45646</li>
-						<li>
-							4.26%
+						<li class="die">
+							-4.26%
 						</li>
 						<li>
 							0.132465464
@@ -315,11 +329,75 @@
 			<!--上币价格信息结束-->
 			<div class="gn">
 				<div class="center">
-					<!--<h2 class="gnname">技术和服务</h2>-->
-					<img src="../img/gn/gn1.png"/>
-					<img src="../img/gn/gn2.png"/>
-					<img src="../img/gn/gn3.png"/>
-					<img src="../img/gn/gn4.png"/>
+					<h2 class="gnname">技术和服务</h2>
+					<!--1-->
+					<div class="gnpic clearfix">
+						<div class="gnpicleft">
+							<img src="../img/38.png"/>
+						</div>
+						<div class="gnpicright">
+							<p class="gntitles">
+								便捷的区块链资产交易平台
+							</p>
+							<p class="gntitles1">
+								通过H5自适应技术，支持电脑，平板，手机端
+							</p>
+							<p class="gntitles1">
+								进行专业便捷的交易，满足不同用户的需求
+							</p>
+						</div>
+					</div>
+					<!--2-->
+					<div class="gnpic clearfix">
+						<div class="gnpicright1">
+							<p class="gntitles textright">
+								高性能可信赖技术
+							</p>
+							<p class="gntitles1 textright">
+								通过H5自适应技术，支持电脑，平板，手机端
+							</p>
+							<p class="gntitles1 textright">
+								进行专业便捷的交易，满足不同用户的需求
+							</p>
+						</div>
+						<div class="gnpicleft1">
+							<img src="../img/39.png"/>
+						</div>
+					</div>
+					<!--3-->
+					<div class="gnpic clearfix">
+						<div class="gnpicleft">
+							<img src="../img/39.png"/>
+						</div>
+						<div class="gnpicright">
+							<p class="gntitles">
+								便捷的区块链资产交易平台
+							</p>
+							<p class="gntitles1">
+								通过H5自适应技术，支持电脑，平板，手机端
+							</p>
+							<p class="gntitles1">
+								进行专业便捷的交易，满足不同用户的需求
+							</p>
+						</div>
+					</div>
+					<!--4-->
+					<div class="gnpic clearfix">
+						<div class="gnpicright1">
+							<p class="gntitles textright">
+								高性能可信赖技术
+							</p>
+							<p class="gntitles1 textright">
+								通过H5自适应技术，支持电脑，平板，手机端
+							</p>
+							<p class="gntitles1 textright">
+								进行专业便捷的交易，满足不同用户的需求
+							</p>
+						</div>
+						<div class="gnpicleft1">
+							<img src="../img/40.png"/>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="ziliaoku">
@@ -435,6 +513,8 @@
 		</section>
 	</body>
 	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/jquery.slotmachine.js" charset="utf-8"></script>
+	<script src="../static/jquery.liMarquee.js" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
 			var slider = $("#mSlider5 .mSlider_con").slider({
@@ -464,6 +544,10 @@
 			$('.city').click(function(){
 				$('.citymore').show()
 			})
+			 $('.dowebok').liMarquee({
+				        direction: 'up',
+				        scrollamount:'15'
+				    });
 		});
 	</script>
 

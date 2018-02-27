@@ -257,3 +257,8 @@ nav{
 	box-sizing: border-box;
 	padding: 20px 40px;
 }
+.listtitle:hover{
+	background: #ff9b26;
+	color: #FFF;
+	cursor: pointer;
+}
