@@ -18,8 +18,8 @@
 	width: 300px;
 	height: 540px;
 	float: left;
-	background: #FFF;
-	border: 1px solid #ddd;
+	background: #181c1f;
+	border: 1px solid #181c1f;
 }
 .sidebartab li{
 	width: 33.33%;
@@ -28,7 +28,7 @@
 	float: left;
 	line-height: 35px;
 	font-size: 14px;
-	color: #838fa1;
+	color: #FFF;
 }
 .sidebartab1 li{
 	width: 33.33%;
@@ -37,7 +37,7 @@
 	float: left;
 	line-height: 35px;
 	font-size: 14px;
-	color: #838fa1;
+	color: #fff;
 }
 .leixing{
 	width: 100%;
@@ -51,7 +51,7 @@
 	float: left;
 	line-height: 35px;
 	font-size: 14px;
-	color: #838fa1;
+	color: #FFF;
 }
 .sidebartab2 li:hover{
 	color: red;
@@ -74,8 +74,8 @@
 .toppage{
 	height: 68px;
 	width: 1088px;
-	border: 1px solid #ddd;
-	background: #FFF;
+	border: 1px solid #181c1f;
+	background: #181c1f;
 }
 .toppage .title{
 	width: 133px;
@@ -131,15 +131,15 @@
 	width: 13px;
 	height: 13px;
 	background: #000;
-	border: 2px solid #000;
+	border: 2px solid #ff9b26;
 	margin-top: 10px;
 	cursor:pointer;
 }
 .bai{
 	width: 13px;
 	height: 13px;
-	background: #fff;
-	border: 2px solid #ff9b26;
+	background: #FFF;
+	border: 2px solid #fff;
 	margin-top: 10px;
 	cursor:pointer;
 }
@@ -158,13 +158,13 @@
 	width: 680px;
 	float: left;
 	height: 100%;
-	background: #FFF;
+	background: #181c1f;
 }
 .buyright{
 	width: 400px;
 	float: right;
 	height: 100%;
-	background: #FFF;
+	background: #181c1f;
 }
 .buylefttab{
 	height: 40px;
@@ -276,6 +276,7 @@
     height: 14px;
 	 float: right;
 	 margin-right: 10px;
+	 color: #FFF;
 }
 .amount_range .min {
     float: left;
@@ -327,14 +328,15 @@
 	position: absolute;
 	right: 0;
 	top: 4px;
-	background: #ddd;
+	background: #DCDCDC;
+	opacity: 0.5;
 }
 .buyright{
 	box-sizing: border-box;
 	padding: 10px;
 }
 .buyselect{
-	border-bottom: 1px solid #dddddd;
+	border-bottom: 1px solid rgba(221,221,221,0.4);
 }
 .buyselect1{
 	width: 50px;
@@ -397,13 +399,13 @@
 	color: #4bdde2;
 }
 .bottom{
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid rgba(221,221,221,0.4);
 }
 .newcj{
 	width: 1088px;
 	height: 178px;
-	border: 1px solid #ddd;
-	background: #FFF;
+	border: 1px solid #181c1f;
+	background: #181c1f;
 	margin-top:10px;
 	box-sizing: border-box;
 	padding: 10px 20px;
@@ -412,7 +414,7 @@
 	color: #838fa1;
 	font-size: 14px;
 	padding-bottom: 8px;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid rgba(221,221,221,0.4);
 	font-weight: 100;
 }
 .cjlist{
@@ -429,7 +431,7 @@
 	
 }
 .mygd{
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #181c1f;
 }
 .mygd1{
 	text-align: center;
@@ -446,4 +448,7 @@
 .caozuo{
 	float: right;
 	margin-right: 10px;
+}
+body,.content{
+	background: #23242b;
 }
