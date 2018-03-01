@@ -8,6 +8,16 @@
     float: left;
     padding-top: 18px;
 }
+.daohongicon1{
+	width: 20px;
+    height: auto;
+    padding-right: 10px;
+    float: left;
+    padding-top: 10px;
+}
+.nopadding{
+	padding-top:0;
+}
 .title{
 	height: 60px;
 	width: 940px;

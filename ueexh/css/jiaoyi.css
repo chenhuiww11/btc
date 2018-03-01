@@ -225,8 +225,6 @@
     color: #838fa1;
     padding-top: 10px;
 }
-
-
 .range {
     position: relative;
     width: 198px;
@@ -322,7 +320,7 @@
 	font-weight: 600;
 }
 .line{
-	height: 310px;
+	height: 325px;
 	width: 1px;
 	position: absolute;
 	right: 0;
@@ -446,4 +444,10 @@
 .caozuo{
 	float: right;
 	margin-right: 10px;
+}
+.demore{
+	float: right;
+    color: #ff9b26;
+    margin-right: 46px;
+    font-size: 14px;
 }

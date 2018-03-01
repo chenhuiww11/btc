@@ -242,7 +242,9 @@ nav{
 	color: #FFFFFF;
 	background-size:100% 100%;
 	float: left;
-	text-indent: 20px;
+	text-indent: 6px;
+	box-sizing: border-box;
+	padding-left: 10px;
 }
 .content{
 	width: 100%;
@@ -257,7 +259,7 @@ nav{
 	box-sizing: border-box;
 	padding: 20px 40px;
 }
-.listtitle:hover{
+.bg:hover{
 	background: #ff9b26;
 	color: #FFF;
 	cursor: pointer;
