@@ -121,6 +121,7 @@
 	line-height: 50px;
 	color: #fff;
 	font-size: 16px;
+	position: relative;
 }
 .wapper .tabstate{
 	overflow: hidden;
@@ -341,4 +342,12 @@
 }
 .wapper .tabcontent .die{
 	color: green;
+}
+.line{
+	width: 1px;
+    height: 42px;
+    background: rgba(255,255,255,0.4);
+    position: absolute;
+    right: 0;
+    top: 7px;
 }

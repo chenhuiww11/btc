@@ -7,6 +7,8 @@
     <meta name="format-detection" content="telephone=no"/>
     <link rel="stylesheet" type="text/css" href="../css/base.css"/>
     <link rel="stylesheet" type="text/css" href="../css/shenfenrz.css"/>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../js/shenfen.js" type="text/javascript" charset="utf-8"></script>
     <title>币</title>
 </head>
 <body>
@@ -61,7 +63,7 @@
   	  <div class="center clearfix">
   	      <div class="contentright">
   	      	  <div class="safe">
-  	      	  	<h2>提交工单</h2>
+  	      	  	<h2>身份认证</h2>
   	      	  	<div class="contentrightlist">
   	      	  		<form class="from">
   	      	  		<div class="my clearfix">
@@ -88,54 +90,104 @@
   	      	  			<input type="text" name="" id="my" value="" class="myys"/>
   	      	  		</div>
   	      	  		<div class="my clearfix">
-  	      	  			<p class="myinfo">有效身份证号码：</p>
-  	      	  			<input type="text" name="" id="my" value="" class="myys"/>
+  	      	  			<p class="myinfo">请选择有效证件：</p>
+  	      	  			<select id="state" class="myys" onchange="func()">
+					        <option value="身份证">身份证</option>
+					        <option value="护照">护照</option>
+					    </select>
   	      	  		</div>
-  	      	  		<div class="my clearfix">
-  	      	  			<p class="myinfo">本人身份证正面照：</p>
-  	      	  			<p class="filea">
-  	      	  				点击上传图片
-  	      	  				<input type="file" name="" id="my" class="file"/>
-  	      	  			</p>
-  	      	  			<div class="fenfenpic">
-  	      	  				<img src="../img/shenfenzm.png"/>
-  	      	  			</div>
-  	      	  			
+  	      	  		<div id="shenfenzheng">
+	  	      	  		<div class="my clearfix">
+	  	      	  			<p class="myinfo" id="idname">有效身份证号码：</p>
+	  	      	  			<input type="text" name="" id="my" value="" class="myys"/>
+	  	      	  		</div>
+	  	      	  		<div class="my clearfix">
+	  	      	  			<p class="myinfo">本人身份证正面照：</p>
+	  	      	  			<p class="filea">
+	  	      	  				点击上传图片
+	  	      	  				<input type="file" name="" id="my" class="file"/>
+	  	      	  			</p>
+	  	      	  			<div class="fenfenpic">
+	  	      	  				<img src="../img/shenfenzm.png"/>
+	  	      	  			</div>
+	  	      	  			
+	  	      	  		</div>
+	  	      	  		<div class="my clearfix">
+	  	      	  			<p class="myinfo">本人身份证正反面：</p>
+	  	      	  			<p class="filea">
+	  	      	  				点击上传图片
+	  	      	  				<input type="file" name="" id="my" class="file"/>
+	  	      	  			</p>
+	  	      	  			<div class="fenfenpic">
+	  	      	  				<img src="../img/shenfenfm.png"/>
+	  	      	  			</div>
+	  	      	  			
+	  	      	  		</div>
+	  	      	  		<div class="my clearfix">
+	  	      	  			<p class="myinfo">本人手持身份证：</p>
+	  	      	  			<p class="filea">
+	  	      	  				点击上传图片
+	  	      	  				<input type="file" name="" id="my" class="file"/>
+	  	      	  			</p>
+	  	      	  			<div class="fenfenpic">
+	  	      	  				<p class="text1">请您上传一张手持身份证正面照和个人签字的照片。</p>
+	  	      	  				<p class="text1">个人签字的内容包含“UEXCH”和当前日期。请确保照片和个人签字的内容清晰可见。</p>
+	  	      	  				<img src="../img/shouchishenfen.png"/>
+	  	      	  			</div>
+	  	      	  			
+	  	      	  		</div>
+	  	      	  		<div class="my clearfix">
+	  	      	  			<p class="myinfo">本人资产证明：</p>
+	  	      	  			<p class="filea">
+	  	      	  				点击上传图片
+	  	      	  				<input type="file" name="" id="my" class="file"/>
+	  	      	  			</p>
+	  	      	  			<div class="fenfenpic">
+	  	      	  				<p class="text1">水电费单据或银行流水等证明</p>
+	  	      	  			</div>
+	  	      	  			
+	  	      	  		</div>
   	      	  		</div>
-  	      	  		<div class="my clearfix">
-  	      	  			<p class="myinfo">本人身份证正反面：</p>
-  	      	  			<p class="filea">
-  	      	  				点击上传图片
-  	      	  				<input type="file" name="" id="my" class="file"/>
-  	      	  			</p>
-  	      	  			<div class="fenfenpic">
-  	      	  				<img src="../img/shenfenfm.png"/>
-  	      	  			</div>
-  	      	  			
-  	      	  		</div>
-  	      	  		<div class="my clearfix">
-  	      	  			<p class="myinfo">本人手持身份证：</p>
-  	      	  			<p class="filea">
-  	      	  				点击上传图片
-  	      	  				<input type="file" name="" id="my" class="file"/>
-  	      	  			</p>
-  	      	  			<div class="fenfenpic">
-  	      	  				<p class="text1">请您上传一张手持身份证正面照和个人签字的照片。</p>
-  	      	  				<p class="text1">个人签字的内容包含“UEXCH”和当前日期。请确保照片和个人签字的内容清晰可见。</p>
-  	      	  				<img src="../img/shouchishenfen.png"/>
-  	      	  			</div>
-  	      	  			
-  	      	  		</div>
-  	      	  		<div class="my clearfix">
-  	      	  			<p class="myinfo">本人资产证明：</p>
-  	      	  			<p class="filea">
-  	      	  				点击上传图片
-  	      	  				<input type="file" name="" id="my" class="file"/>
-  	      	  			</p>
-  	      	  			<div class="fenfenpic">
-  	      	  				<p class="text1">水电费单据或银行流水等证明</p>
-  	      	  			</div>
-  	      	  			
+  	      	  		<!--护照-->
+  	      	  		<div id="huzhao">
+	  	      	  		<div class="my clearfix">
+	  	      	  			<p class="myinfo" id="idname">有效护照号码：</p>
+	  	      	  			<input type="text" name="" id="my" value="" class="myys"/>
+	  	      	  		</div>
+	  	      	  		<div class="my clearfix">
+	  	      	  			<p class="myinfo">本人护照正面照：</p>
+	  	      	  			<p class="filea">
+	  	      	  				点击上传图片
+	  	      	  				<input type="file" name="" id="my" class="file"/>
+	  	      	  			</p>
+	  	      	  			<div class="fenfenpic">
+	  	      	  				<p class="text1">请您上传一张手持身份证正面照和个人签字的照片。</p>
+	  	      	  				<p class="text1">个人签字的内容包含“UEXCH”和当前日期。请确保照片和个人签字的内容清晰可见。</p>
+	  	      	  				<img src="../img/shouchishenfen.png"/>
+	  	      	  			</div>
+	  	      	  			
+	  	      	  		</div>
+	  	      	  		<div class="my clearfix">
+	  	      	  			<p class="myinfo">本人手持签字照片：</p>
+	  	      	  			<p class="filea">
+	  	      	  				点击上传图片
+	  	      	  				<input type="file" name="" id="my" class="file"/>
+	  	      	  			</p>
+	  	      	  			<div class="fenfenpic">
+	  	      	  				<img src="../img/shouchishenfen.png"/>
+	  	      	  			</div>
+	  	      	  		</div>
+	  	      	  		<div class="my clearfix">
+	  	      	  			<p class="myinfo">本人资产证明：</p>
+	  	      	  			<p class="filea">
+	  	      	  				点击上传图片
+	  	      	  				<input type="file" name="" id="my" class="file"/>
+	  	      	  			</p>
+	  	      	  			<div class="fenfenpic">
+	  	      	  				<p class="text1">水电费单据或银行流水等证明</p>
+	  	      	  			</div>
+	  	      	  			
+	  	      	  		</div>
   	      	  		</div>
   	      	  		<p class="yzbtn">
   	      	  			提交
