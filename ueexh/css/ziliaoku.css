@@ -1,0 +1,190 @@
+.daohang{
+	width: 120px;
+}
+.daohongicon{
+	width: 20px;
+	height: auto;
+	padding-right: 10px;
+}
+.title{
+	height: 60px;
+	width: 940px;
+	margin: 0 auto 10px;
+	background: #FFF;
+	box-sizing: border-box;
+	padding-left: 40px;
+}
+.title h3{
+	font-size: 16px;
+	color: #838fa1;
+	line-height: 60px;
+	float: left;
+}
+.bugao{
+	height: 600px;
+	overflow: hidden;
+}
+.bugao li{
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+
+}
+.bugao li:nth-child(1){
+	padding-right: 10px;
+	width: 22%;
+}
+.bugao li:nth-child(2){
+	padding-left: 10px;
+	width: 78%;
+}
+.inbugao{
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	box-sizing: border-box;
+}
+.addpadding{
+	padding: 30px 40px;
+}
+.inbugao h2{
+	font-size:16px;
+	color:#838fa1;
+	padding: 20px 10px 10px 30px;
+	box-sizing: border-box;
+	
+}
+.inbugao .xinxi{
+	font-size:16px;
+	color:#838fa1;
+	padding: 15px 10px 10px 30px;
+	box-sizing: border-box;
+}
+.inbugao .allxinxi{
+	height: 416px;
+	overflow-y: auto;
+}
+.inbugao .xinxiactive{
+	background: #ff9b26;
+	color: #fff;
+}
+.xinxi:hover{
+	background: #ff9b26;
+	color: #FFF;
+	cursor: pointer;
+}
+.inbugao .allxinxi1{
+	width: 188px;
+	margin: 40px auto;
+	display: none;
+}
+.inbugao .allxinxi>img{
+	width: 150px;
+}
+.allpage{
+	font-size: 12px;
+	color: #838fa1;
+	text-align: center;
+	padding-top: 10px;
+}
+.guanzhu{
+	float: right;
+	color: #FFF;
+	width: 70px;
+	height: 26px;
+	background: #ff9b26;
+	text-align: center;
+	line-height: 26px;
+	border-radius:2px;
+	font-size: 14px;
+	margin-right: 30px;
+}
+.cancel{
+	background: #cccccc;
+}
+.titileicon{
+	width:40px;
+    height: auto;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.titileinfo{
+	float: right;
+	color: #ff9b26;
+	width:170px;
+	height: 28px;
+	border: 1px solid #ddd;
+	position: relative;
+	top: 10px;
+	right: 10px;
+}
+.titileinfo input{
+	height: 100%;
+	width: 100%;
+	text-indent: 10px;
+}
+.titileinfo .shousuo{
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	width: 16px;
+	height: 16px;
+}
+.jiaoyi{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align:center;
+	color: #FFF;
+	float: right;
+	background:#ff9b26;
+	margin-top: 16px;
+	border-radius:4px;
+}
+.iconimg{
+	width:40px;
+	margin-right: 20px;
+}
+.biname{
+	color: #838fa1;
+	font-size: 18px;
+}
+.biinfo{
+	width: 650px;
+	height: 180px;
+	margin: 20px auto 0;
+	background: #fafafa;
+	box-sizing: border-box;
+	padding: 20px;
+	overflow: hidden;
+}
+.inbugao .biinfo li{
+	width: 50%;
+	height: 30px;
+	float: left;
+	font-size:14px;
+	color: 666666;
+	padding: 0;
+}
+.inbugao .ms{
+	color: #838fa1;
+	font-size: 14px;
+	padding: 20px 0;
+}
+.morebtn{
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 0 60px;
+}
+.inbugao .morebtn li{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align:center;
+	color: #FFF;
+	float: left;
+	background:#ff9b26;
+	border-radius:4px;
+	margin-right: 30px;
+	padding: 0;
+}
