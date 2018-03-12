@@ -264,3 +264,13 @@ nav{
 	color: #FFF;
 	cursor: pointer;
 }
+.listtitle {
+	width: 100%;
+    height: 46px;
+    background: #f6f6f6;
+    text-align: center;
+    line-height: 46px;
+    color: #838fa1;
+    font-size: 14px;
+    overflow: hidden;
+}
