@@ -547,6 +547,11 @@
 			$('.city').click(function(){
 				$('.citymore').show()
 			})
+			$('.citymoretab').click(function(){
+				var path=$(this).children().attr("src");
+				$('.city').children().attr('src',path)
+				$('.citymore').hide()
+			})
 			 $('.dowebok').liMarquee({
 				        direction: 'up',
 				        scrollamount:'15'
