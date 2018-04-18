@@ -274,3 +274,16 @@ nav{
     font-size: 14px;
     overflow: hidden;
 }
+#particles-js{
+	position: absolute;
+    top: 12%;
+    left: 0;
+    z-index: 0;
+}
+.inlogin{
+	    position: relative;
+    z-index: 2;
+}
+.login{
+	position: relative;
+}
