@@ -1,0 +1,61 @@
+@charset "UTF-8";
+*,
+:focus,
+a,
+a:active,
+a:hover {
+    outline: 0
+}
+
+*,
+img {
+    border: 0
+}
+
+.data-loading,
+body {
+    background: #f2f4f7
+}
+
+.data-loading .loading-text,
+.loading .loading_text {
+    color: #999;
+    font-size: 14px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none
+}
+
+input,
+textarea {
+    -webkit-touch-callout: inherit;
+    -webkit-user-select: text
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 12px
+}
+
+ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none!important
+}
+
+em {
+    font-style: normal
+}
+
+img {
+    vertical-align: middle;
+    width: 100%
+}
