@@ -1,9 +1,9 @@
-(function() {
+(function () {
   FastClick.attach(document.body);
   var supportOrientation = typeof window.orientation === "number" && typeof window.onorientationchange === "object";
-  var init = function() {
+  var init = function () {
     var orientation;
-    var updateOrientation = function() {
+    var updateOrientation = function () {
       if (supportOrientation) {
         orientation = window.orientation;
         console.log(orientation);
@@ -38,10 +38,15 @@
   /********************** 分割线 ***********************/
   $(".daqiao")
     .off("click", ".img10")
-    .on("click", ".img10", function() {
+    .on("click", ".img10", function () {
       $(".daqiao .loading").addClass("hide");
+      $(".daqiao .video").removeClass("hide");
       $("#video")[0].play();
     });
-
-  var loadTime
+  $(".daqiao")
+    .off("click", ".skip")
+    .on("click", ".skip", function () {
+      $('.video').addClass("hide");
+      $('.last-page').removeClass('hide');
+    });
 })();

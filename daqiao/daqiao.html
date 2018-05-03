@@ -11,15 +11,15 @@
 
 <body>
     <section class="daqiao">
-    	<div class="daloaing">
-    		<div class="xuanzhuan">
-	    		<img src="img/icon.png" class="incon"/>
-	    		<p class="time">
-	    			100%
-	    		</p>
-    		</div>
-    	</div>
-        <div class="loading">
+        <div class="daloaing">
+            <div class="xuanzhuan">
+                <img src="img/icon.png" class="incon" />
+                <p class="time">
+                    100%
+                </p>
+            </div>
+        </div>
+        <div class="loading hide">
             <img class="img1" src="img/9.png">
             <img class="img2" src="img/10.png">
             <img class="img3" src="img/8.png">
@@ -31,12 +31,13 @@
             <img class="img9" src="img/2.png">
             <img class="img10" src="img/1.png">
         </div>
-        <div class="video">
-            <video id="video" preload="load" width="100%" view-width="1138" view-height="640" view-scale="noborder" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow"
+        <div class="video hide">
+            <video id="video" preload="load" width="100%" view-scale="noborder" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow"
                 airplay="allow" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" src="img/kws.mp4"></video>
+            <img class="skip" src="img/btn.png">
         </div>
-        <div class="last-page">
-        	<img src="img/share.jpg" class="xz"/>
+        <div class="last-page hide">
+            <img src="img/share.jpg" class="xz" />
         </div>
         <div class="bgTip hide">
             <span>请锁定屏幕旋转</span>
@@ -45,26 +46,25 @@
     <script src="js/fastclick.js"></script>
     <!--获取屏幕宽度横屏-->
     <script type="text/javascript">
-		 var pro=0;//设置进度条的初始值
-			var proBar = setInterval(function(){
-			pro++;
-			$('.time').text(pro+'%');
-			if(pro >= 100){
-			   	  	clearInterval(proBar);
-			   	  	$('.loading').show();
-			   	  	$('.daloaing').hide()
-			   	  	
-			   }
-			},100);
-			
-			    var md=$("#video")[0];
-			    md.addEventListener("ended",function(){
-			         $('.video').hide()
-			         $('.last-page').show();
-			    })
+        var pro = 0;//设置进度条的初始值
+        var proBar = setInterval(function () {
+            pro++;
+            $('.time').text(pro + '%');
+            if (pro >= 100) {
+                clearInterval(proBar);
+                $('.loading').removeClass('hide');
+                $('.daloaing').addClass('hide')
+            }
+        }, 100);
+
+        var md = $("#video")[0];
+        md.addEventListener("ended", function () {
+            $('.video').addClass('hide');
+            $('.last-page').removeClass('hide');
+        })
     </script>
     <script src="js/daqiao.js?v=0"></script>
-   
+
 </body>
 
 </html>
