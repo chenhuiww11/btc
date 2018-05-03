@@ -24,6 +24,7 @@
   right: 0;
   bottom: 0;
   z-index: 10;
+  opacity: 0;
 }
 .daqiao .loading > img {
   position: absolute;
@@ -191,6 +192,7 @@
   right: 0;
   bottom: 0;
   z-index: 8;
+  display: none;
 }
 
 .daqiao .bgTip {
@@ -212,8 +214,8 @@
 
 /*开机画面*/
 .daqiao .daloaing{
-  background: url(../img/loading1.jpg) no-repeat center center;
-  background-size: 100% 100%;
+  background: url(../img/loading.jpg) no-repeat center center;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;

@@ -51,13 +51,16 @@
 			$('.time').text(pro+'%');
 			if(pro >= 100){
 			   	  	clearInterval(proBar);
+			   	  	$('.loading').show();
 			   	  	$('.daloaing').hide()
+			   	  	
 			   }
 			},100);
 			
 			    var md=$("#video")[0];
 			    md.addEventListener("ended",function(){
 			         $('.video').hide()
+			         $('.last-page').show();
 			    })
     </script>
     <script src="js/daqiao.js?v=0"></script>
