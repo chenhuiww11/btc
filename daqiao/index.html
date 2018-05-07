@@ -1,0 +1,621 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="screen-orientation" content="portrait">
+		<!-- uc强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>你听，天空、大海和回忆的声音。</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/daqiao.css?v=2">
+		<style type="text/css">
+		.loadingb img {
+				display: none;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.bofang {
+				position: absolute;
+				width: 65px;
+				height: 65px;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				opacity: 0;
+				z-index: 18;
+			}
+			
+			.loadinga {
+				position: relative;
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+			}
+			
+			canvas {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			
+			.loadingb {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.lower {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				-webkit-animation: change 2s linear infinite alternate;
+				width: 86px;
+			}
+			
+			.lowerc {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				-webkit-animation: change 2s linear infinite alternate;
+				width: 40px;
+			}
+			
+			.lowera {
+				-webkit-transition-property: -webkit-transform;
+				-webkit-transition-duration: 1s;
+				-moz-transition-property: -moz-transform;
+				-moz-transition-duration: 1s;
+				-webkit-animation: rotate 10s linear infinite;
+				-moz-animation: rotate 10s linear infinite;
+				-o-animation: rotate 10s linear infinite;
+				animation: rotate 10s linear infinite;
+			}
+			
+			.daqiao .lowerc {
+				width: 30px;
+			}
+			
+			@-webkit-keyframes rotate {
+				from {
+					-webkit-transform: rotate(0deg)
+				}
+				to {
+					-webkit-transform: rotate(360deg)
+				}
+			}
+			
+			@-moz-keyframes rotate {
+				from {
+					-moz-transform: rotate(0deg)
+				}
+				to {
+					-moz-transform: rotate(359deg)
+				}
+			}
+			
+			@-o-keyframes rotate {
+				from {
+					-o-transform: rotate(0deg)
+				}
+				to {
+					-o-transform: rotate(359deg)
+				}
+			}
+			
+			@keyframes rotate {
+				from {
+					transform: rotate(0deg)
+				}
+				to {
+					transform: rotate(359deg)
+				}
+			}
+			
+			.gohome {
+				width: 20%;
+				height: 26%;
+				position: absolute;
+				top: 3%;
+				left: 9%;
+				z-index: 22;
+			}
+			
+			.goshare {
+				width: 20%;
+				height: 26%;
+				position: absolute;
+				top: 28%;
+				left: 9%;
+				z-index: 22;
+			}
+			
+			.bg {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: rgba(0, 0, 0, 0.6);
+				z-index: 28;
+				display: none;
+			}
+			
+			.shareinfo {
+				width: 37%;
+				position: absolute;
+				right: 6%;
+				top: 5%;
+			}
+			
+			.dqimg {
+				width: 100%;
+				position: absolute;
+				right: 0%;
+				bottom: 3%;
+				z-index: 2;
+			}
+			
+			.hide {
+				/*display: none;*/
+			}
+			
+			.video {
+				position: absolute;
+			}
+			/*横屏*/
+			
+			@media all and (orientation: landscape) {
+				.shuping {
+					display: none;
+				}
+				.hengping {
+					display: block;
+				}
+				.skip {
+					bottom: 0;
+					top: 10px;
+					right: 28px;
+					transform: rotate(-90deg)!important;
+					-webkit-transform: rotate(-90deg)!important;
+				}
+				.dqimg {
+					width: 36%;
+					bottom: 2%;
+				}
+				.gohome {
+					width: 20%;
+					height: 26%;
+					position: absolute;
+					left: 6%;
+					z-index: 22;
+					top: 70%;
+				}
+				.goshare {
+					width: 20%;
+					height: 26%;
+					position: absolute;
+					top: 70%;
+					left: 31%;
+					z-index: 22;
+				}
+				.shareinfo {
+					right: 70%;
+					width: 26%;
+				}
+				.anniu {
+					width: 44%;
+					position: absolute;
+					top: 75%;
+					left: 8%;
+					z-index: 22;
+				}
+				.wenzi {
+					width: 53%;
+					position: absolute;
+					top: 5%;
+					left: 2%;
+					z-index: 22;
+				}
+				.video {
+					display: block;
+				}
+			}
+			/*竖屏*/
+			
+			@media all and (orientation: portrait) {
+				.hengping {
+					display: none;
+				}
+				.shuping {
+					display: block;
+				}
+				.anniu {
+					width: 12%;
+					position: absolute;
+					top: 6%;
+					left: 10%;
+					z-index: 22;
+				}
+				.wenzi {
+					width: 48%;
+					position: absolute;
+					top: 5%;
+					left: 44%;
+					z-index: 22;
+				}
+				.video {
+					position: absolute;
+					transform-origin: 0% 0% 0px;
+					width: 1138px;
+					height: 640px;
+					overflow: hidden;
+					display: block;
+					transform: matrix3d(0, 0.5861, 0, 0, -0.5861, 0, 0, 0, 0, 0, 1, 0, 375, 0, 0, 1)!important;
+				}
+				#video {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					overflow: hidden;
+				}
+			}
+		}
+		</style>
+		<script src="js/zepto.all.js"></script>
+	</head>
+
+	<body>
+		<!--竖屏-->
+		<section class="daqiao shuping">
+			<div class="loading hide">
+				<img src="img/shouye/1.jpg" style="height: 100%;" />
+				<audio id="bgMusic" src="img/bofang.mp3"></audio>
+				<!--进度条-->
+				<div class="loadinga">
+					<canvas id="canvas">
+						
+					</canvas>
+					<div class="lower">
+						<img src="img/shouye/bofang3.png" />
+					</div>
+					<div class="lowerc">
+						<img src="img/shouye/bofang4.png" class="lowera" />
+					</div>
+				</div>
+				<div class="loadingb">
+					<!--进度条结束-->
+					<img src="img/shouye/1.jpg" />
+					<img src="img/shouye/2.jpg" />
+					<img src="img/shouye/3.jpg" />
+					<img src="img/shouye/4.jpg" />
+					<img src="img/shouye/5.jpg" />
+					<img src="img/shouye/6.jpg" />
+					<img src="img/shouye/7.jpg" />
+					<img src="img/shouye/8.jpg" />
+					<img src="img/shouye/9.jpg" />
+					<img src="img/shouye/10.jpg" />
+					<img src="img/shouye/11.jpg" />
+					<img src="img/shouye/12.jpg" />
+					<img src="img/shouye/13.jpg" />
+					<img src="img/shouye/14.jpg" />
+					<img src="img/shouye/15.jpg" />
+					<img src="img/shouye/16.jpg" />
+					<img src="img/shouye/17.jpg" />
+					<img src="img/shouye/18.jpg" />
+					<img src="img/shouye/19.jpg" />
+					<img src="img/shouye/20.jpg" />
+					<img src="img/shouye/21.jpg" />
+					<img src="img/shouye/22.jpg" />
+					<div class="bofang">
+						<img src="img/shouye/bofang.gif" />
+					</div>
+				</div>
+			</div>
+			<div class="last-page hide">
+				<div class="gohome">
+				</div>
+				<div class="goshare">
+				</div>
+				<img src="img/shouye/back.png" class="anniu" />
+				<img src="img/shouye/daqiaotext.png" class="wenzi" />
+				<img src="img/shouye/daqiao.png" class="dqimg" />
+				<div class="bg">
+					<img src="img/shouye/sharetext.png" class="shareinfo" />
+				</div>
+				<img src="img/share.jpg" class="xz" />
+			</div>
+		</section>
+
+		<!--横屏-->
+		<section class="daqiao hengping">
+			<div class="loading hide">
+				<img src="img/1.jpg" style="height: 100%;" />
+				<audio id="bgMusic" src="img/bofang.mp3"></audio>
+				<!--进度条-->
+				<div class="loadinga">
+					<canvas id="canvas1">
+						
+					</canvas>
+					<div class="lower">
+						<img src="img/bofang3.png" />
+					</div>
+					<div class="lowerc">
+						<img src="img/shouye/bofang4.png" class="lowera" />
+					</div>
+				</div>
+				<div class="loadingb">
+					<!--进度条结束-->
+					<img src="img/1.jpg" />
+					<img src="img/2.jpg" />
+					<img src="img/3.jpg" />
+					<img src="img/4.jpg" />
+					<img src="img/5.jpg" />
+					<img src="img/6.jpg" />
+					<img src="img/7.jpg" />
+					<img src="img/8.jpg" />
+					<img src="img/9.jpg" />
+					<img src="img/10.jpg" />
+					<img src="img/11.jpg" />
+					<img src="img/12.jpg" />
+					<img src="img/13.jpg" />
+					<img src="img/14.jpg" />
+					<img src="img/15.jpg" />
+					<img src="img/16.jpg" />
+					<img src="img/17.jpg" />
+					<img src="img/18.jpg" />
+					<img src="img/19.jpg" />
+					<img src="img/20.jpg" />
+					<img src="img/21.jpg" />
+					<img src="img/22.jpg" />
+					<div class="bofang">
+						<img src="img/shouye/bofang.gif" />
+					</div>
+				</div>
+			</div>
+			<div class="last-page hide">
+				<div class="gohome">
+
+				</div>
+				<div class="goshare">
+
+				</div>
+				<img src="img/daqiao.png" class="dqimg" />
+				<img src="img/back.png" class="anniu" />
+				<img src="img/daqiaotext.png" class="wenzi" />
+				<div class="bg">
+					<img src="img/sharetext.png" class="shareinfo" />
+				</div>
+				<img src="img/share1.jpg" class="xz" />
+			</div>
+			<!--<div class="bgTip hide">
+				<span>请锁定屏幕旋转</span>
+			</div>-->
+		</section>
+		<img class="skip" src="img/btn.png">
+		<div class="video hide">
+			<video id="video" preload="auto" width="100%" view-scale="noborder" playsinline="true" webkit-playsinline="true" x-webkit-airplay="allow" airplay="allow" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portrait" src="http://s.ku-h5.com/s/demo/daqiao/img/kws1.mp4"></video>
+		</div>
+		<script src="js/fastclick.js"></script>
+		<!--获取屏幕宽度横屏-->
+		<script type="text/javascript">
+			var pro = 0; //设置进度条的初始值
+			var width = $(document.body).width();
+			var height = $(document.body).height();
+			document.getElementById("canvas").width = 200;
+			document.getElementById("canvas").height = 200;
+			$('.loading').removeClass('hide');
+			$('.daloaing').addClass('hide')
+				//图片预加载
+			var oImg = document.getElementById('img1');
+
+			var oImage = new Image();
+
+			var arr = [
+				'img/1.jpg',
+				'img/shouye/1.jpg',
+				'img/2.jpg',
+				'img/3.jpg',
+				'img/4.jpg',
+				'img/5.jpg',
+				'img/shouye/2.jpg',
+				'img/shouye/3.jpg',
+				'img/shouye/4.jpg',
+				'img/shouye/5.jpg',
+				'img/shouye/6.jpg',
+				'img/shouye/7.jpg',
+				'img/shouye/8.jpg',
+				'img/shouye/9.jpg',
+				'img/shouye/10.jpg',
+				'img/shouye/11.jpg',
+				'img/shouye/12.jpg',
+				'img/shouye/13.jpg',
+				'img/shouye/14.jpg',
+				'img/shouye/15.jpg',
+				'img/shouye/16.jpg',
+				'img/shouye/17.jpg',
+				'img/shouye/18.jpg',
+				'img/shouye/19.jpg',
+				'img/shouye/20.jpg',
+				'img/shouye/21.jpg',
+				'img/shouye/22.jpg',
+				'img/6.jpg',
+				'img/7.jpg',
+				'img/8.jpg',
+				'img/9.jpg',
+				'img/10.jpg',
+				'img/11.jpg',
+				'img/12.jpg',
+				'img/13.jpg',
+				'img/14.jpg',
+				'img/15.jpg',
+				'img/16.jpg',
+				'img/17.jpg',
+				'img/18.jpg',
+				'img/19.jpg',
+				'img/20.jpg',
+				'img/21.jpg',
+				'img/22.jpg',
+			];
+
+			var iCur = 0;
+			var i = 0;
+
+			xunlei();
+
+			function xunlei() {
+				oImage.src = arr[iCur];
+				oImage.onload = function() {
+					iCur++;
+					if(iCur < arr.length) {
+						xunlei(); //递归
+					} else {
+						//		            	alert('结束')
+						$('.loadinga').hide()
+						var music = document.getElementById("bgMusic");
+						document.addEventListener("WeixinJSBridgeReady", function() { //微信    
+							music.play(); //音频播放  
+						}, false);
+						music.play()
+						var proBar = setInterval(function() {
+							$('.loadingb img:nth-child(' + pro + ')').hide()
+							pro++;
+							if(pro > 21) {
+								pro = 22
+							}
+							if(pro > 21) {
+								if(first) {
+									$('.bofang').fadeIn(2000);
+									$('.bofang img').fadeIn(2000);
+									first = false;
+								}
+							}
+							$('.loadingb img:nth-child(' + pro + ')').show()
+						}, 500);
+					}
+
+				}
+			}
+
+			function draw() {
+				//      进度条
+				var canvas = document.getElementById('canvas'), //获取canvas元素
+					context = canvas.getContext('2d'), //获取画图环境，指明为2d
+					centerX = canvas.width / 2, //Canvas中心点x轴坐标
+					centerY = canvas.height / 2, //Canvas中心点y轴坐标
+					rad = Math.PI * 2 / 100, //将360度分成100份，那么每一份就是rad度
+					speed = 0.1; //加载的快慢就靠它了 
+				//绘制蓝色外圈
+				function blueCircle(n) {
+					context.save();
+					context.strokeStyle = "#6d5b3d"; //设置描边样式
+					context.lineWidth = 3; //设置线宽
+					context.beginPath(); //路径开始
+					context.arc(centerX, centerY, 50, -Math.PI / 2, -Math.PI / 2 + n * rad, false); //用于绘制圆弧context.arc(x坐标，y坐标，半径，起始角度，终止角度，顺时针/逆时针)
+					context.stroke(); //绘制
+					context.closePath(); //路径结束
+					context.restore();
+				}
+				//绘制白色外圈
+				function whiteCircle() {
+					context.save();
+					context.beginPath();
+					context.strokeStyle = "#a59885";
+					context.lineWidth = 3; //设置线宽
+					context.arc(centerX, centerY, 50, 0, Math.PI * 2, false);
+					context.stroke();
+					context.closePath();
+					context.restore();
+				}
+				//动画循环
+				(function drawFrame() {
+					window.requestAnimationFrame(drawFrame, canvas);
+					context.clearRect(0, 0, canvas.width, canvas.height);
+					whiteCircle();
+					blueCircle(speed);
+					if(speed > 99.9) {
+						//				return false
+						speed = 0
+					};
+					speed += 0.1;
+				}());
+			}
+
+			function draw1() {
+				//      进度条
+				var canvas1 = document.getElementById('canvas1'), //获取canvas元素
+					context = canvas1.getContext('2d'), //获取画图环境，指明为2d
+					centerX = canvas1.width / 2, //Canvas中心点x轴坐标
+					centerY = canvas1.height / 2, //Canvas中心点y轴坐标
+					rad = Math.PI * 2 / 100, //将360度分成100份，那么每一份就是rad度
+					speed = 0.1; //加载的快慢就靠它了 
+				//绘制蓝色外圈
+				function blueCircle(n) {
+					context.save();
+					context.strokeStyle = "#6d5b3d"; //设置描边样式
+					context.lineWidth = 3; //设置线宽
+					context.beginPath(); //路径开始
+					context.arc(centerX, centerY, 50, -Math.PI / 2, -Math.PI / 2 + n * rad, false); //用于绘制圆弧context.arc(x坐标，y坐标，半径，起始角度，终止角度，顺时针/逆时针)
+					context.stroke(); //绘制
+					context.closePath(); //路径结束
+					context.restore();
+				}
+				//绘制白色外圈
+				function whiteCircle() {
+					context.save();
+					context.beginPath();
+					context.strokeStyle = "#a59885";
+					context.lineWidth = 3; //设置线宽
+					context.arc(centerX, centerY, 50, 0, Math.PI * 2, false);
+					context.stroke();
+					context.closePath();
+					context.restore();
+				}
+				//动画循环
+				(function drawFrame() {
+					window.requestAnimationFrame(drawFrame, canvas1);
+					context.clearRect(0, 0, canvas1.width, canvas1.height);
+					whiteCircle();
+					blueCircle(speed);
+					if(speed > 99.9) {
+						//				return false
+						speed = 0
+					};
+					speed += 0.1;
+				}());
+			}
+
+			draw();
+			draw1();
+			var first = true;
+
+			var md = $("#video")[0];
+			md.addEventListener("ended", function() {
+					$('.skip').hide();
+					$('.video').hide();
+					$('.last-page').removeClass('hide');
+				})
+				//			落地页
+			$('.gohome').click(function() {
+				location.href = "https://pvp.qq.com/mall/m/index.html?biz=yxzj#/list/detail/4626?ADTAG=xf.h5.entr"
+			})
+			$('.goshare').click(function() {
+				$('.bg').show(100)
+			})
+			$('.bg').click(function() {
+				$('.bg').hide()
+			})
+		</script>
+		<script src="js/daqiao.js?v=4"></script>
+
+	</body>
+
+</html>
